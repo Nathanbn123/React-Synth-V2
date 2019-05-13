@@ -1,16 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import keyOne from '../synth art/key1.svg';
+import keyOneDown from '../synth art/key1push.svg';
 import keyTwo from '../synth art/key2.svg';
+import keyTwoDown from '../synth art/key2push.svg';
 import keyThree from '../synth art/key3.svg';
+import keyThreeDown from '../synth art/key3push.svg';
 import keyFour from '../synth art/key4.svg';
+import keyFourDown from '../synth art/key4push.svg';
 import keyFive from '../synth art/key5.svg';
+import keyFiveDown from '../synth art/key5push.svg';
 import keySix from '../synth art/key6.svg';
+import keySixDown from '../synth art/key6push.svg';
 import keySeven from '../synth art/key7.svg';
+import keySevenDown from '../synth art/key7push.svg';
 import Rectangle from '../synth art/Rectangle.svg';
+import RectangleDown from '../synth art/Rectanglepush.svg';
 import finalKey from '../synth art/finalkey.svg';
+import finalKeyDown from '../synth art/finalkeypush.svg';
 import boardControl from '../synth art/boardcontrol.svg';
 import sideKey from '../synth art/sidekeycontrol.svg';
+
 
 
 class Keyboard extends React.Component {
@@ -20,14 +30,20 @@ class Keyboard extends React.Component {
   }
   render(){
     return (
-      <div>
+      <div className="parent">
         <style jsx>{`
+            .parent {
+              display: flex;
+              border: 5px solid pink;
+              justify-content: center;
+              margin-top: 250px;
+            }
             .row {
               position: relative;
               display: flex;
               flex-direction: row;
               width: 880px;
-              margin-left: 23px;
+              right: 25px;
               padding-top: 420px;
             }
             .background-board {
@@ -44,6 +60,15 @@ class Keyboard extends React.Component {
             }
             .one {
               margin: none;
+            }
+            .k1push {
+              display: none;
+            }
+            .one:hover .k1push {
+              display: block;
+            }
+            .one:hover .k1 {
+              display: none;
             }
             .rectangleOne {
               position: absolute;
@@ -97,7 +122,8 @@ class Keyboard extends React.Component {
             </div>
             <div className="grid-container">
               <div className="one">
-                <img src={keyOne}/>
+                <img className="k1" src={keyOne}/>
+                <img className="k1push" src={keyOneDown}/>
               </div>
               <div className="rectangleOne">
                 <img src={Rectangle}/>
@@ -178,7 +204,7 @@ class Keyboard extends React.Component {
 
             <div className="grid-container">
               <div className="one">
-                
+
                 <img src={keyOne}/>
               </div>
               <div className="rectangleOne">
