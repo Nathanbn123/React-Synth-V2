@@ -31,10 +31,15 @@ export class App extends React.Component {
 
   render() {
     return (
-      <Switch>
-        <Route path='/Error' component={Error404} />
-        <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} />} />
-      </Switch>
+      <div>
+        <Switch>
+          <Route path='/Error' component={Error404} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} />} />
+        </Switch>
+        <Keyboard/>
+
+      </div>
+
     );
   }
 
