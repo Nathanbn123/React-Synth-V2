@@ -1,25 +1,18 @@
 import React from 'react';
+
 import Tone from 'Tone';
 
-class Key extends React.Component {
 
-  constructor(props) {
-    super(props);
+function Key(keyInfo) {
 
 
-
-
-
-  render() {
-    return (
+  return (
 
 
 
+  )
 
-
-
-
-    )
-  }
 }
+
+
 export default Key;
