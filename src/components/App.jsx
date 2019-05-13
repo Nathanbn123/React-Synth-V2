@@ -3,6 +3,7 @@ import Error404 from './Error404';
 import PropTypes from 'prop-types';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import Keyboard from './Keyboard';
+import Board from './Board'
 
 
 export class App extends React.Component {
@@ -11,7 +12,7 @@ export class App extends React.Component {
     return (
       <Switch>
         <Route path='/Error' component={Error404} />
-        <Route path='/' component={Keyboard} />
+        <Route path='/' component={Board} />
       </Switch>
     )
   }
