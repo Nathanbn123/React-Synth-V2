@@ -62,7 +62,7 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Keyboard defaultKeys={this.state.defaultKeys} />} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} />} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
