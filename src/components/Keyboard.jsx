@@ -9,6 +9,8 @@ import keySix from '../synth art/key6.svg';
 import keySeven from '../synth art/key7.svg';
 import Rectangle from '../synth art/Rectangle.svg';
 import finalKey from '../synth art/finalkey.svg';
+import boardControl from '../synth art/boardcontrol.svg';
+import sideKey from '../synth art/sidekeycontrol.svg';
 
 
 class Keyboard extends React.Component {
@@ -18,14 +20,19 @@ class Keyboard extends React.Component {
   }
   render(){
     return (
-      <div className="row">
+      <div>
         <style jsx>{`
             .row {
+              position: relative;
               display: flex;
               flex-direction: row;
-              border: 5px solid pink;
+              width: 880px;
+              margin-left: 23px;
+              padding-top: 420px;
             }
-
+            .background-board {
+              position: absolute;
+            }
             .grid-container {
               display: grid;
               position: relative;
@@ -33,7 +40,6 @@ class Keyboard extends React.Component {
               grid-template-rows: ;
               grid-template-areas: ". . . . . . . . . . . .";
               position: relative;
-
               width: 280px;
             }
             .one {
@@ -81,130 +87,142 @@ class Keyboard extends React.Component {
 
             `}
           </style>
-          <div className="grid-container">
-            <div className="one">
-              <img src={keyOne}/>
-            </div>
-            <div className="rectangleOne">
-              <img src={Rectangle}/>
-            </div>
-            <div className="two">
-              <img src={keyTwo}/>
-            </div>
-            <div className="rectangleTwo">
-              <img src={Rectangle}/>
-            </div>
-            <div className="three">
-              <img src={keyThree}/>
-            </div>
-            <div className="four">
-              <img src={keyFour}/>
-            </div>
-            <div className="rectangleThree">
-              <img src={Rectangle}/>
-            </div>
-            <div className="five">
-              <img src={keyFive}/>
-            </div>
-            <div className="rectangleFour">
-              <img src={Rectangle}/>
-            </div>
-            <div className="six">
-              <img src={keySix}/>
-            </div>
-            <div className="rectangleFive">
-              <img src={Rectangle}/>
-            </div>
-            <div className="seven">
-              <img src={keySeven}/>
-            </div>
-          </div>
-
-
-
-          <div className="grid-container">
-            <div className="one">
-              <img src={keyOne}/>
-            </div>
-            <div className="rectangleOne">
-              <img src={Rectangle}/>
-            </div>
-            <div className="two">
-              <img src={keyTwo}/>
-            </div>
-            <div className="rectangleTwo">
-              <img src={Rectangle}/>
-            </div>
-            <div className="three">
-              <img src={keyThree}/>
-            </div>
-            <div className="four">
-              <img src={keyFour}/>
-            </div>
-            <div className="rectangleThree">
-              <img src={Rectangle}/>
-            </div>
-            <div className="five">
-              <img src={keyFive}/>
-            </div>
-            <div className="rectangleFour">
-              <img src={Rectangle}/>
-            </div>
-            <div className="six">
-              <img src={keySix}/>
-            </div>
-            <div className="rectangleFive">
-              <img src={Rectangle}/>
-            </div>
-            <div className="seven">
-              <img src={keySeven}/>
-            </div>
-          </div>
-
-
-          <div className="grid-container">
-            <div className="one">
-              <img src={keyOne}/>
-            </div>
-            <div className="rectangleOne">
-              <img src={Rectangle}/>
-            </div>
-            <div className="two">
-              <img src={keyTwo}/>
-            </div>
-            <div className="rectangleTwo">
-              <img src={Rectangle}/>
-            </div>
-            <div className="three">
-              <img src={keyThree}/>
-            </div>
-            <div className="four">
-              <img src={keyFour}/>
-            </div>
-            <div className="rectangleThree">
-              <img src={Rectangle}/>
-            </div>
-            <div className="five">
-              <img src={keyFive}/>
-            </div>
-            <div className="rectangleFour">
-              <img src={Rectangle}/>
-            </div>
-            <div className="six">
-              <img src={keySix}/>
-            </div>
-            <div className="rectangleFive">
-              <img src={Rectangle}/>
-            </div>
-            <div className="seven">
-              <img src={keySeven}/>
-            </div>
-            <div>
-              <img src={finalKey}/>
-            </div>
-          </div>
-
+        <div className="background-board">
+          <img src={boardControl}/>
         </div>
+
+        <div className="row">
+            <div>
+              <img src={sideKey}/>
+            </div>
+            <div className="grid-container">
+              <div className="one">
+                <img src={keyOne}/>
+              </div>
+              <div className="rectangleOne">
+                <img src={Rectangle}/>
+              </div>
+              <div className="two">
+                <img src={keyTwo}/>
+              </div>
+              <div className="rectangleTwo">
+                <img src={Rectangle}/>
+              </div>
+              <div className="three">
+                <img src={keyThree}/>
+              </div>
+              <div className="four">
+                <img src={keyFour}/>
+              </div>
+              <div className="rectangleThree">
+                <img src={Rectangle}/>
+              </div>
+              <div className="five">
+                <img src={keyFive}/>
+              </div>
+              <div className="rectangleFour">
+                <img src={Rectangle}/>
+              </div>
+              <div className="six">
+                <img src={keySix}/>
+              </div>
+              <div className="rectangleFive">
+                <img src={Rectangle}/>
+              </div>
+              <div className="seven">
+                <img src={keySeven}/>
+              </div>
+            </div>
+
+
+
+            <div className="grid-container">
+              <div className="one">
+                <img src={keyOne}/>
+              </div>
+              <div className="rectangleOne">
+                <img src={Rectangle}/>
+              </div>
+              <div className="two">
+                <img src={keyTwo}/>
+              </div>
+              <div className="rectangleTwo">
+                <img src={Rectangle}/>
+              </div>
+              <div className="three">
+                <img src={keyThree}/>
+              </div>
+              <div className="four">
+                <img src={keyFour}/>
+              </div>
+              <div className="rectangleThree">
+                <img src={Rectangle}/>
+              </div>
+              <div className="five">
+                <img src={keyFive}/>
+              </div>
+              <div className="rectangleFour">
+                <img src={Rectangle}/>
+              </div>
+              <div className="six">
+                <img src={keySix}/>
+              </div>
+              <div className="rectangleFive">
+                <img src={Rectangle}/>
+              </div>
+              <div className="seven">
+                <img src={keySeven}/>
+              </div>
+            </div>
+
+
+            <div className="grid-container">
+              <div className="one">
+                
+                <img src={keyOne}/>
+              </div>
+              <div className="rectangleOne">
+                <img src={Rectangle}/>
+              </div>
+              <div className="two">
+                <img src={keyTwo}/>
+              </div>
+              <div className="rectangleTwo">
+                <img src={Rectangle}/>
+              </div>
+              <div className="three">
+                <img src={keyThree}/>
+              </div>
+              <div className="four">
+                <img src={keyFour}/>
+              </div>
+              <div className="rectangleThree">
+                <img src={Rectangle}/>
+              </div>
+              <div className="five">
+                <img src={keyFive}/>
+              </div>
+              <div className="rectangleFour">
+                <img src={Rectangle}/>
+              </div>
+              <div className="six">
+                <img src={keySix}/>
+              </div>
+              <div className="rectangleFive">
+                <img src={Rectangle}/>
+              </div>
+              <div className="seven">
+                <img src={keySeven}/>
+              </div>
+              <div>
+                <img src={finalKey}/>
+              </div>
+            </div>
+
+          </div>
+
+
+      </div>
 
       );
 
