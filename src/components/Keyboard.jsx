@@ -34,7 +34,7 @@ class Keyboard extends React.Component {
         <style jsx>{`
             .parent {
               display: flex;
-              border: 5px solid pink;
+              border: 5px solid red;
               justify-content: center;
               margin-top: 250px;
             }
@@ -60,6 +60,7 @@ class Keyboard extends React.Component {
             }
             .one {
               margin: none;
+
             }
             .k1push {
               display: none;
@@ -73,41 +74,141 @@ class Keyboard extends React.Component {
             .rectangleOne {
               position: absolute;
               left: 25px;
-              width: inherit;
+
+            }
+            .rpush {
+              display: none;
+            }
+            .rectangleOne:hover .rpush {
+              display: block;
+            }
+            .rectangleOne:hover .r {
+              display: none;
             }
             .two {
               margin: none;
             }
+            .k2push {
+              display: none;
+            }
+            .two:hover .k2push {
+              display: block;
+            }
+            .two:hover .k2 {
+              display: none;
+            }
             .rectangleTwo{
               position: absolute;
               left: 72px;
+
+            }
+            .r2push {
+              display: none;
+            }
+            .rectangleTwo:hover .r2push {
+              display: block;
+            }
+            .rectangleTwo:hover .r2 {
+              display: none;
             }
             .three {
               margin: none;
             }
+            .k3push {
+              display: none;
+            }
+            .three:hover .k3push {
+              display: block;
+            }
+            .three:hover .k3 {
+              display: none;
+            }
             .four {
               margin: none;
+            }
+            .k4push {
+              display: none;
+            }
+            .four:hover .k4push {
+              display: block;
+            }
+            .four:hover .k4 {
+              display: none;
             }
             .rectangleThree{
               position: absolute;
               left: 141px;
             }
+            .r3push {
+              display: none;
+            }
+            .rectangleThree:hover .r3push {
+              display: block;
+            }
+            .rectangleThree:hover .r3 {
+              display: none;
+            }
             .five {
               margin: none;
+            }
+            .k5push {
+              display: none;
+            }
+            .five:hover .k5push {
+              display: block;
+            }
+            .five:hover .k5 {
+              display: none;
             }
             .rectangleFour{
               position: absolute;
               left: 188px;
             }
+            .r4push {
+              display: none;
+            }
+            .rectangleFour:hover .r4push {
+              display: block;
+            }
+            .rectangleFour:hover .r4 {
+              display: none;
+            }
             .six {
               margin: none;
+            }
+            .k6push {
+              display: none;
+            }
+            .six:hover .k6push {
+              display: block;
+            }
+            .six:hover .k6 {
+              display: none;
             }
             .rectangleFive{
               position: absolute;
               left: 233px;
             }
+            .r5push {
+              display: none;
+            }
+            .rectangleFive:hover .r5push {
+              display: block;
+            }
+            .rectangleFive:hover .r5 {
+              display: none;
+            }
             .seven {
               margin: none;
+            }
+            .k7push {
+              display: none;
+            }
+            .seven:hover .k7push {
+              display: block;
+            }
+            .seven:hover .k7 {
+              display: none;
             }
 
             `}
@@ -126,37 +227,48 @@ class Keyboard extends React.Component {
                 <img className="k1push" src={keyOneDown}/>
               </div>
               <div className="rectangleOne">
-                <img src={Rectangle}/>
+                <img className="r" src={Rectangle}/>
+                <img className="rpush" src={RectangleDown}/>
               </div>
               <div className="two">
-                <img src={keyTwo}/>
+                <img className="k2" src={keyTwo}/>
+                <img className="k2push" src={keyTwoDown}/>
               </div>
               <div className="rectangleTwo">
-                <img src={Rectangle}/>
+                <img className="r2" src={Rectangle}/>
+                <img className="r2push" src={RectangleDown}/>
               </div>
               <div className="three">
-                <img src={keyThree}/>
+                <img className="k3" src={keyThree}/>
+                <img className="k3push" src={keyThreeDown}/>
               </div>
               <div className="four">
-                <img src={keyFour}/>
+                <img className="k4" src={keyFour}/>
+                <img className="k4push" src={keyFourDown}/>
               </div>
               <div className="rectangleThree">
-                <img src={Rectangle}/>
+                <img className="r3" src={Rectangle}/>
+                <img className="r3push" src={RectangleDown}/>
               </div>
               <div className="five">
-                <img src={keyFive}/>
+                <img className="k5" src={keyFive}/>
+                <img className="k5push" src={keyFiveDown}/>
               </div>
               <div className="rectangleFour">
-                <img src={Rectangle}/>
+                <img className="r4" src={Rectangle}/>
+                <img className="r4push" src={RectangleDown}/>
               </div>
               <div className="six">
-                <img src={keySix}/>
+                <img className="k6" src={keySix}/>
+                <img className="k6push" src={keySixDown}/>
               </div>
               <div className="rectangleFive">
-                <img src={Rectangle}/>
+                <img className="r5" src={Rectangle}/>
+                <img className="r5push" src={RectangleDown}/>
               </div>
               <div className="seven">
-                <img src={keySeven}/>
+                <img className="k7" src={keySeven}/>
+                <img className="k7push" src={keySevenDown}/>
               </div>
             </div>
 
