@@ -91,6 +91,23 @@ class Keyboard extends React.Component {
           <img src={boardControl}/>
         </div>
 
+
+
+    <div>
+      <div className="grid-container">
+        {this.props.keyClassNames.map((instance, index) => (
+          <div className={instance[index]}>
+            <img onClick={() => {this.props.playSound(this.props.defaultKeys.keys[index], this.props.defaultKeys.speed)}} src="../synth art/"{this.props.imgSrc[index]}".svg"/>
+          </div>
+        ))}
+      </div>
+    </div>);
+}
+
+
+
+
+
         <div className="row">
             <div>
               <img src={sideKey}/>

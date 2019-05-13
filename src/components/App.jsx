@@ -12,6 +12,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      board: {
+        classNames: ['one', 'rectangleOne', 'two', 'rectangleTwo', 'three', 'four', 'rectangleThree', 'five', 'rectangleFour', 'six', 'rectangleFive', 'seven'],
+        imgSrc: ['keyOne', 'Rectangle', 'keyTwo', 'Rectangle', 'keyThree', 'keyFour', 'Rectangle', 'keyFive', 'Rectangle', 'keySix', 'Rectangle', 'keySeven'],
+        columns: 3,
+      },
       defaultKeys: {
         keys: [''],
         speed: '8n'
@@ -62,7 +67,7 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} />} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
