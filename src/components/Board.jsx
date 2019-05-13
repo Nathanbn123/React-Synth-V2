@@ -1,13 +1,20 @@
 import React from 'react';
 import Tone from 'Tone';
 
-function Board() {
-  var synth = new Tone.Synth().toMaster();
+class Board extends React.Component {
 
-  synth.triggerAttackRelease("C4", "8n");
+  constructor(props) {
+    super(props);
+    var synth = new Tone.Synth().toMaster();
 
-  return (
-    <div></div>
+    synth.triggerAttackRelease("C4", "8n");
 
-)};
+  }
+  render() {
+    return (
+      <div></div>
+
+    )
+  }
+};
 export default Board
