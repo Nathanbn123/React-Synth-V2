@@ -5,21 +5,25 @@ class Board extends React.Component {
 
   constructor(props) {
     super(props);
-
+    let synth = new Tone.Synth().toMaster();
+    this.state = {
+      synth: synth,
+    }
+    this.playSound = this.playSound.bind(this);
   }
 
-  playSound() {
-    var synth = new Tone.Synth().toMaster();
-    synth.triggerAttackRelease("C4", "8n");
+  playSound(note, speed) {
+    console.log(this.state.synth);
+    this.state.synth.triggerAttackRelease(note, speed);
 
   }
   render() {
     return (
       <div>
-        <button onClick={this.playSound} />
+        <button onClick={() => {this.playSound('C4', '8n')}} />
       </div>
 
-    )
+    );
   }
-};
-export default Board
+}
+export default Board;
