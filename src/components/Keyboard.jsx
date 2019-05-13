@@ -97,40 +97,40 @@ class Keyboard extends React.Component {
             </div>
             <div className="grid-container">
               <div className="one">
-                <img src={keyOne}/>
+                <img onClick={() => {this.props.playSound('B3', '8n')}} src={keyOne}/>
               </div>
               <div className="rectangleOne">
-                <img src={Rectangle}/>
+                <img onClick={() => {this.props.playSound('C3', '8n')}} src={Rectangle}/>
               </div>
               <div className="two">
-                <img src={keyTwo}/>
+                <img onClick={() => {this.props.playSound('C#3', '8n')}} src={keyTwo}/>
               </div>
               <div className="rectangleTwo">
-                <img src={Rectangle}/>
+                <img onClick={() => {this.props.playSound('D3', '8n')}} src={Rectangle}/>
               </div>
               <div className="three">
-                <img src={keyThree}/>
+                <img onClick={() => {this.props.playSound('D#3', '8n')}} src={keyThree}/>
               </div>
               <div className="four">
-                <img src={keyFour}/>
+                <img onClick={() => {this.props.playSound('E3', '8n')}} src={keyFour}/>
               </div>
               <div className="rectangleThree">
-                <img src={Rectangle}/>
+                <img onClick={() => {this.props.playSound('F3', '8n')}} src={Rectangle}/>
               </div>
               <div className="five">
-                <img src={keyFive}/>
+                <img onClick={() => {this.props.playSound('F#3', '8n')}} src={keyFive}/>
               </div>
               <div className="rectangleFour">
-                <img src={Rectangle}/>
+                <img onClick={() => {this.props.playSound('G3', '8n')}} src={Rectangle}/>
               </div>
               <div className="six">
-                <img src={keySix}/>
+                <img onClick={() => {this.props.playSound('G#3', '8n')}} src={keySix}/>
               </div>
               <div className="rectangleFive">
-                <img src={Rectangle}/>
+                <img onClick={() => {this.props.playSound('A4', '8n')}} src={Rectangle}/>
               </div>
               <div className="seven">
-                <img src={keySeven}/>
+                <img onClick={() => {this.props.playSound('A#4', '8n')}}src={keySeven}/>
               </div>
             </div>
 
@@ -178,7 +178,7 @@ class Keyboard extends React.Component {
 
             <div className="grid-container">
               <div className="one">
-                
+
                 <img src={keyOne}/>
               </div>
               <div className="rectangleOne">
@@ -232,6 +232,7 @@ class Keyboard extends React.Component {
 
 Keyboard.propTypes = {
   defaultKeys: PropTypes.object,
+  playSound: PropTypes.func,
 };
 
 

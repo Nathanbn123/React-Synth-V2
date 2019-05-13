@@ -36,7 +36,6 @@ export class App extends React.Component {
           <Route path='/Error' component={Error404} />
           <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} />} />
         </Switch>
-        <Keyboard/>
 
       </div>
 
