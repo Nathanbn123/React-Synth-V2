@@ -4,6 +4,7 @@ import Keyboard from './Keyboard';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 
+
 class Board extends React.Component {
 
   constructor(props) {
@@ -35,8 +36,11 @@ class Board extends React.Component {
     return (
       <div>
         <KeyboardEventHandler handleKeys={['all']} onKeyEvent={(key) => this.setEventKey(key)} />
-          <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys}/>
-    </div>
+
+        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys} imgClassNames={this.props.imgClassNames}/>
+      </div>
+
+
     );
   }
 }
