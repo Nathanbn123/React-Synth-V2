@@ -9,7 +9,7 @@ class Board extends React.Component {
 
   constructor(props) {
     super(props);
-    let synth = new Tone.Synth().toMaster();
+    const synth = new Tone.Synth().toMaster();
     this.state = {
       synth: synth,
     }
@@ -20,8 +20,14 @@ class Board extends React.Component {
 
 
   playSound(note, speed) {
-    console.log(this.state.synth);
+    this.state.synth.envelope.attack = this.props.envelope.attack;
+    this.state.synth.envelope.decay = this.props.envelope.decay;
+    this.state.synth.envelope.sustain = this.props.envelope.sustain;
+    this.state.synth.envelope.release = this.props.envelope.release;
+    this.state.synth.oscillator.type = this.props.oscillator.type;
+    console.log(this.state.synth.oscillator);
     this.state.synth.triggerAttackRelease(note, speed);
+
 
   }
 

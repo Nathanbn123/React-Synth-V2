@@ -38,11 +38,38 @@ class App extends React.Component {
   }
 
   handleKnobChange(name, degree) {
+    const newDegree = degree - 50;
     if(name == "attack") {
-      const newDegree = degree - 50;
       let newAttack = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
       newAttack = parseFloat(newAttack.toFixed(3));
       this.state.envelope.attack = newAttack;
+    }
+    if(name == "decay") {
+      let newDecay = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
+      newDecay = parseFloat(newDecay.toFixed(3));
+      this.state.envelope.decay = newDecay;
+    }
+    if(name == "sustain") {
+      let newSustain = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
+      newSustain = parseFloat(newSustain.toFixed(3));
+      this.state.envelope.sustain = newSustain;
+    }
+    if(name == "release") {
+      let newRelease = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
+      newRelease = parseFloat(newRelease.toFixed(3));
+      this.state.envelope.release = newRelease;
+    }
+    if(name == "oscillator") {
+      if(newDegree > 0 && newDegree <= 65) {
+        this.state.oscillator.type = 'triangle';
+      } else if(newDegree > 65 && newDegree <= 130) {
+        this.state.oscillator.type = 'sine';
+      } else if(newDegree > 130 && newDegree <= 195) {
+        this.state.oscillator.type = 'sawtooth';
+      } else if(newDegree > 195 && newDegree <= 260) {
+        this.state.oscillator.type = 'pulse';
+      }
+
     }
     this.forceUpdate()
   }
@@ -67,7 +94,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="App">
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}} >
+
           <Knob
             size={100}
             numTicks={25}
@@ -80,9 +108,59 @@ class App extends React.Component {
             updateKnob={this.handleKnobChange}
             knobName={"attack"}
             />
+          <Knob
+            size={100}
+            numTicks={25}
+            degrees={260}
+            min={1}
+            max={100}
+            value={30}
+            color={true}
+            onChange={() =>{this.handleChange}}
+            updateKnob={this.handleKnobChange}
+            knobName={"decay"}
+            />
+          <Knob
+            size={100}
+            numTicks={25}
+            degrees={260}
+            min={1}
+            max={100}
+            value={30}
+            color={true}
+            onChange={() =>{this.handleChange}}
+            updateKnob={this.handleKnobChange}
+            knobName={"sustain"}
+            />
+          <Knob
+            size={100}
+            numTicks={25}
+            degrees={260}
+            min={1}
+            max={100}
+            value={30}
+            color={true}
+            onChange={() =>{this.handleChange}}
+            updateKnob={this.handleKnobChange}
+            knobName={"release"}
+            />
+          <Knob
+            size={100}
+            numTicks={25}
+            degrees={260}
+            min={1}
+            max={100}
+            value={30}
+            color={true}
+            onChange={() =>{this.handleChange}}
+            updateKnob={this.handleKnobChange}
+            knobName={"oscillator"}
+            />
+        </div>
+        <div className="App">
           </div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames}/>} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
