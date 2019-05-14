@@ -29,7 +29,7 @@ class App extends React.Component {
       },
       envelope: {
         attack: 0.005,
-        decay: 0.1,
+        decay: 4.0,
         sustain: 0.3,
         release: 1,
         }
@@ -40,12 +40,11 @@ class App extends React.Component {
   handleKnobChange(name, degree) {
     if(name == "attack") {
       const newDegree = degree - 50;
-      const newAttack = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
+      let newAttack = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
+      newAttack = parseFloat(newAttack.toFixed(3));
       this.state.envelope.attack = newAttack;
-      this.forceUpdate()
-
-
     }
+    this.forceUpdate()
   }
 
   handleChange(newValue) {
@@ -66,7 +65,6 @@ class App extends React.Component {
   //     />
   // </div>
   render() {
-    console.log(this.state.envelope);
     return (
       <div>
         <div className="App">
@@ -91,9 +89,6 @@ class App extends React.Component {
       </div>
     );
   }
-
-
-
 }
 
 
