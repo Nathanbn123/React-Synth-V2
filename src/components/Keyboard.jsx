@@ -50,8 +50,14 @@ class Keyboard extends React.Component {
             }
             .knob2small {
               position: relative;
-              bottom: 263px;
-              right: 877px;
+              bottom: 358px;
+              right: 473px;
+              margin: none;
+            }
+            .knob3small {
+              position: relative;
+              bottom: 286px;
+              right: 503px;
               margin: none;
             }
             .row {
@@ -623,6 +629,7 @@ class Keyboard extends React.Component {
                 color={true}
                 onChange={() =>{this.handleChange}}
                 updateKnob={this.props.updateKnob}
+                knobName={"hold"}
                 />
             </div>
             <div className="knob3small">
@@ -636,6 +643,7 @@ class Keyboard extends React.Component {
                 color={true}
                 onChange={() =>{this.handleChange}}
                 updateKnob={this.props.updateKnob}
+                knobName={"attack"}
                 />
             </div>
             <div>
