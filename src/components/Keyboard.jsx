@@ -27,6 +27,7 @@ class Keyboard extends React.Component {
 
 
   render(){
+
     return (
       <div>
         <style jsx>{`
@@ -92,6 +93,9 @@ class Keyboard extends React.Component {
             .seven {
               margin: none;
             }
+            .finalKey {
+              margin: none;
+            }
 
             `}
           </style>
@@ -104,133 +108,35 @@ class Keyboard extends React.Component {
               <img src={sideKey}/>
             </div>
             <div className="grid-container">
-              <div className="one">
-                <img data-key="81" onClick={() => {this.props.playSound('B3', '8n')}} src={keyOne}/>
-              </div>
-              <div className="rectangleOne">
-                <img onClick={() => {this.props.playSound('C3', '8n')}} src={Rectangle}/>
-              </div>
-              <div className="two">
-                <img onClick={() => {this.props.playSound('C#3', '8n')}} src={keyTwo}/>
-              </div>
-              <div className="rectangleTwo">
-                <img onClick={() => {this.props.playSound('D3', '8n')}} src={Rectangle}/>
-              </div>
-              <div className="three">
-                <img onClick={() => {this.props.playSound('D#3', '8n')}} src={keyThree}/>
-              </div>
-              <div className="four">
-                <img onClick={() => {this.props.playSound('E3', '8n')}} src={keyFour}/>
-              </div>
-              <div className="rectangleThree">
-                <img onClick={() => {this.props.playSound('F3', '8n')}} src={Rectangle}/>
-              </div>
-              <div className="five">
-                <img onClick={() => {this.props.playSound('F#3', '8n')}} src={keyFive}/>
-              </div>
-              <div className="rectangleFour">
-                <img onClick={() => {this.props.playSound('G3', '8n')}} src={Rectangle}/>
-              </div>
-              <div className="six">
-                <img onClick={() => {this.props.playSound('G#3', '8n')}} src={keySix}/>
-              </div>
-              <div className="rectangleFive">
-                <img onClick={() => {this.props.playSound('A4', '8n')}} src={Rectangle}/>
-              </div>
-              <div className="seven">
-                <img onClick={() => {this.props.playSound('A#4', '8n')}}src={keySeven}/>
-              </div>
+
+              {this.props.imgSrc.map((instance, i) => (
+                <div key={i} onClick={() =>{this.props.playSound(this.props.defaultKeys.notes1[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                  <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
+                </div>
+              ))}
+
             </div>
-
-
-
             <div className="grid-container">
-              <div className="one">
-                <img src={keyOne}/>
-              </div>
-              <div className="rectangleOne">
-                <img src={Rectangle}/>
-              </div>
-              <div className="two">
-                <img src={keyTwo}/>
-              </div>
-              <div className="rectangleTwo">
-                <img src={Rectangle}/>
-              </div>
-              <div className="three">
-                <img src={keyThree}/>
-              </div>
-              <div className="four">
-                <img src={keyFour}/>
-              </div>
-              <div className="rectangleThree">
-                <img src={Rectangle}/>
-              </div>
-              <div className="five">
-                <img src={keyFive}/>
-              </div>
-              <div className="rectangleFour">
-                <img src={Rectangle}/>
-              </div>
-              <div className="six">
-                <img src={keySix}/>
-              </div>
-              <div className="rectangleFive">
-                <img src={Rectangle}/>
-              </div>
-              <div className="seven">
-                <img src={keySeven}/>
-              </div>
+              {this.props.imgSrc.map((instance, i) => (
+                <div key={i} onClick={() => {this.props.playSound(this.props.defaultKeys.notes2[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                  <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
+                </div>
+              ))}
             </div>
-
-
             <div className="grid-container">
-              <div className="one">
-
-                <img src={keyOne}/>
-              </div>
-              <div className="rectangleOne">
-                <img src={Rectangle}/>
-              </div>
-              <div className="two">
-                <img src={keyTwo}/>
-              </div>
-              <div className="rectangleTwo">
-                <img src={Rectangle}/>
-              </div>
-              <div className="three">
-                <img src={keyThree}/>
-              </div>
-              <div className="four">
-                <img src={keyFour}/>
-              </div>
-              <div className="rectangleThree">
-                <img src={Rectangle}/>
-              </div>
-              <div className="five">
-                <img src={keyFive}/>
-              </div>
-              <div className="rectangleFour">
-                <img src={Rectangle}/>
-              </div>
-              <div className="six">
-                <img src={keySix}/>
-              </div>
-              <div className="rectangleFive">
-                <img src={Rectangle}/>
-              </div>
-              <div className="seven">
-                <img src={keySeven}/>
-              </div>
-              <div>
-                <img src={finalKey}/>
-              </div>
+              {this.props.imgSrc.map((instance, i) => (
+                <div key={i} onClick={() =>{this.props.playSound(this.props.defaultKeys.notes3[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                  <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
+                </div>
+              ))}
+            </div>
+            <div onClick={() => {this.props.playSound(this.props.defaultKeys.lastNote, this.props.defaultKeys.speed)}} className='finalKey' >
+              <img src={finalKey}/>
             </div>
 
           </div>
+        </div>
 
-
-      </div>
 
       );
 
@@ -238,10 +144,7 @@ class Keyboard extends React.Component {
 
 }
 
-Keyboard.propTypes = {
-  defaultKeys: PropTypes.object,
-  playSound: PropTypes.func,
-};
+
 
 
 export default Keyboard;
