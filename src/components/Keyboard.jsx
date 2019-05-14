@@ -11,13 +11,21 @@ import Rectangle from '../synth art/Rectangle.svg';
 import finalKey from '../synth art/finalkey.svg';
 import boardControl from '../synth art/boardcontrol.svg';
 import sideKey from '../synth art/sidekeycontrol.svg';
-
+import {HotKeys} from 'react-hotkeys';
 
 class Keyboard extends React.Component {
   constructor(props) {
     super(props);
     console.log(this.props);
   }
+
+
+
+
+
+
+
+
   render(){
 
     return (
@@ -95,25 +103,18 @@ class Keyboard extends React.Component {
           <img src={boardControl}/>
         </div>
 
-
-
-    <div>
-    </div>
-
-
-
-
-
         <div className="row">
             <div>
               <img src={sideKey}/>
             </div>
             <div className="grid-container">
+
               {this.props.imgSrc.map((instance, i) => (
                 <div key={i} onClick={() =>{this.props.playSound(this.props.defaultKeys.notes1[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
                   <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
                 </div>
               ))}
+
             </div>
             <div className="grid-container">
               {this.props.imgSrc.map((instance, i) => (
