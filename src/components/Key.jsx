@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Tone from 'Tone';
+
 
 function Key(keyInfo) {
 
@@ -11,5 +13,6 @@ function Key(keyInfo) {
   )
 
 }
+
 
 export default Key;

@@ -1,5 +1,7 @@
 import React from 'react';
 import Tone from 'Tone';
+import Keyboard from './Keyboard';
+
 
 class Board extends React.Component {
 
@@ -20,7 +22,7 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={() => {this.playSound('C4', '8n')}} />
+        <Keyboard playSound={this.playSound} state={this.state} />
       </div>
 
     );

@@ -547,15 +547,15 @@ class Keyboard extends React.Component {
             <div className="grid-container">
               <div className="one">
                 <img className="k1" src={keyOne}/>
-                <img className="k1push" src={keyOneDown}/>
+                <img className="k1push" onClick={() => {this.props.playSound('A#4', '8n')}} src={keyOneDown}/>
               </div>
               <div className="rectangleOne">
                 <img className="r" src={Rectangle}/>
-                <img className="rpush" src={RectangleDown}/>
+                <img className="rpush" onClick={() => {this.props.playSound('A#4', '8n')}} src={RectangleDown}/>
               </div>
               <div className="two">
                 <img className="k2" src={keyTwo}/>
-                <img className="k2push" src={keyTwoDown}/>
+                <img className="k2push" onClick={() => {this.props.playSound('A#4', '8n')}} src={keyTwoDown}/>
               </div>
               <div className="rectangleTwo">
                 <img className="r2" src={Rectangle}/>
