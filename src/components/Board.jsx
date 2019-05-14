@@ -1,7 +1,6 @@
 import React from 'react';
 import Tone from 'Tone';
 import Keyboard from './Keyboard';
-import { HotKeys } from 'react-hotkeys';
 
 
 class Board extends React.Component {
@@ -23,7 +22,7 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys}/>
+        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys} imgClassNames={this.props.imgClassNames}/>
       </div>
 
     );

@@ -15,6 +15,7 @@ class App extends React.Component {
       board: {
         classNames: ['one', 'rectangleOne', 'two', 'rectangleTwo', 'three', 'four', 'rectangleThree', 'five', 'rectangleFour', 'six', 'rectangleFive', 'seven','one', 'rectangleOne', 'two', 'rectangleTwo', 'three', 'four', 'rectangleThree', 'five', 'rectangleFour', 'six', 'rectangleFive', 'seven'],
         imgSrc: ['key1', 'Rectangle', 'key2', 'Rectangle', 'key3', 'key4', 'Rectangle', 'key5', 'Rectangle', 'key6', 'Rectangle', 'key7'],
+        imgClassNames: [['k1', 'k1push'], ['r', 'rpush'], ['k2', 'k2push'], ['r2', 'r2push'], ['k3', 'k3push'], ['k4', 'k4push'], ['r3', 'r3push'], ['k5', 'k5push'], ['r4', 'r4push'], ['k6', 'k6push'], ['r5', 'r5push'], ['k7', 'k7push']],
       },
       defaultKeys: {
         notes1: ['B3', 'C3', 'C#3', 'D3', 'D#3', 'E3', 'F3', 'F#3', 'G3', 'G#3', 'A4', 'A#4'],
@@ -69,7 +70,7 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc}/>} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
