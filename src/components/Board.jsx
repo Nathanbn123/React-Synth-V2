@@ -1,6 +1,7 @@
 import React from 'react';
 import Tone from 'Tone';
 import Keyboard from './Keyboard';
+import { HotKeys } from 'react-hotkeys';
 
 
 class Board extends React.Component {
