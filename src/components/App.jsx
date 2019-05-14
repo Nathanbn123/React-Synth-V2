@@ -94,69 +94,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}} >
-
-          <Knob
-            size={100}
-            numTicks={25}
-            degrees={260}
-            min={1}
-            max={100}
-            value={30}
-            color={true}
-            onChange={() =>{this.handleChange}}
-            updateKnob={this.handleKnobChange}
-            knobName={"attack"}
-            />
-          <Knob
-            size={100}
-            numTicks={25}
-            degrees={260}
-            min={1}
-            max={100}
-            value={30}
-            color={true}
-            onChange={() =>{this.handleChange}}
-            updateKnob={this.handleKnobChange}
-            knobName={"decay"}
-            />
-          <Knob
-            size={100}
-            numTicks={25}
-            degrees={260}
-            min={1}
-            max={100}
-            value={30}
-            color={true}
-            onChange={() =>{this.handleChange}}
-            updateKnob={this.handleKnobChange}
-            knobName={"sustain"}
-            />
-          <Knob
-            size={100}
-            numTicks={25}
-            degrees={260}
-            min={1}
-            max={100}
-            value={30}
-            color={true}
-            onChange={() =>{this.handleChange}}
-            updateKnob={this.handleKnobChange}
-            knobName={"release"}
-            />
-          <Knob
-            size={100}
-            numTicks={25}
-            degrees={260}
-            min={1}
-            max={100}
-            value={30}
-            color={true}
-            onChange={() =>{this.handleChange}}
-            updateKnob={this.handleKnobChange}
-            knobName={"oscillator"}
-            />
-        </div>
         <div className="App">
           </div>
         <Switch>
@@ -171,3 +108,70 @@ class App extends React.Component {
 
 
 export default App;
+
+
+
+
+// <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}} >
+//
+//   <Knob
+//     size={100}
+//     numTicks={25}
+//     degrees={260}
+//     min={1}
+//     max={100}
+//     value={30}
+//     color={true}
+//     onChange={() =>{this.handleChange}}
+//     updateKnob={this.handleKnobChange}
+//     knobName={"attack"}
+//     />
+//   <Knob
+//     size={100}
+//     numTicks={25}
+//     degrees={260}
+//     min={1}
+//     max={100}
+//     value={30}
+//     color={true}
+//     onChange={() =>{this.handleChange}}
+//     updateKnob={this.handleKnobChange}
+//     knobName={"decay"}
+//     />
+//   <Knob
+//     size={100}
+//     numTicks={25}
+//     degrees={260}
+//     min={1}
+//     max={100}
+//     value={30}
+//     color={true}
+//     onChange={() =>{this.handleChange}}
+//     updateKnob={this.handleKnobChange}
+//     knobName={"sustain"}
+//     />
+//   <Knob
+//     size={100}
+//     numTicks={25}
+//     degrees={260}
+//     min={1}
+//     max={100}
+//     value={30}
+//     color={true}
+//     onChange={() =>{this.handleChange}}
+//     updateKnob={this.handleKnobChange}
+//     knobName={"release"}
+//     />
+//   <Knob
+//     size={100}
+//     numTicks={25}
+//     degrees={260}
+//     min={1}
+//     max={100}
+//     value={30}
+//     color={true}
+//     onChange={() =>{this.handleChange}}
+//     updateKnob={this.handleKnobChange}
+//     knobName={"oscillator"}
+//     />
+// </div>
