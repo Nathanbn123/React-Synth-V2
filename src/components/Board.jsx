@@ -1,7 +1,7 @@
 import React from 'react';
 import Tone from 'Tone';
 import Keyboard from './Keyboard';
-import { HotKeys } from 'react-hotkeys';
+import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 
 class Board extends React.Component {
@@ -13,7 +13,10 @@ class Board extends React.Component {
       synth: synth,
     }
     this.playSound = this.playSound.bind(this);
+    this.setEventKey = this.setEventKey.bind(this);
+
   }
+
 
   playSound(note, speed) {
     console.log(this.state.synth);
@@ -21,31 +24,19 @@ class Board extends React.Component {
 
   }
 
-  onKeyUp(keyName, e, handle) {
-     console.log("test:onKeyUp", e, handle)
-     this.setState({
-       output: `onKeyUp ${keyName}`,
-     });
-   }
-   onKeyDown(keyName, e, handle) {
-     console.log("test:onKeyDown", keyName, e, handle)
-     this.setState({
-       output: `onKeyDown ${keyName}`,
-     });
-   }
+  setEventKey(key) {
+    console.log(key)
+  }
+
+
+
 
   render() {
     return (
       <div>
-        <HotKeys
-          keyName="q, w"
-       onKeyDown={this.onKeyDown.bind(this)}
-       onKeyUp={this.onKeyUp.bind(this)}
-          >
+        <KeyboardEventHandler handleKeys={['all']} onKeyEvent={(key) => this.setEventKey(key)} />
           <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys}/>
-        </HotKeys>
     </div>
-
     );
   }
 }
