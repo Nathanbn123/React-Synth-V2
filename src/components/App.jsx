@@ -81,25 +81,14 @@ class App extends React.Component {
     });
   };
 
-  //
-  //   <Knob
-  //     numTicks={125}
-  //     degrees={180}
-  //     min={1}
-  //     max={100}
-  //     value={0}
-  //     onChange={() =>{this.handleChange}}
-  //     />
-  // </div>
   render() {
     return (
       <div>
-        <div className="App">
-          </div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator}/>} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
+
 
       </div>
     );
