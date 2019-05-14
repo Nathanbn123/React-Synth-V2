@@ -20,11 +20,31 @@ class Board extends React.Component {
     this.state.synth.triggerAttackRelease(note, speed);
 
   }
+
+  onKeyUp(keyName, e, handle) {
+     console.log("test:onKeyUp", e, handle)
+     this.setState({
+       output: `onKeyUp ${keyName}`,
+     });
+   }
+   onKeyDown(keyName, e, handle) {
+     console.log("test:onKeyDown", keyName, e, handle)
+     this.setState({
+       output: `onKeyDown ${keyName}`,
+     });
+   }
+
   render() {
     return (
       <div>
-        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys}/>
-      </div>
+        <HotKeys
+          keyName="q, w"
+       onKeyDown={this.onKeyDown.bind(this)}
+       onKeyUp={this.onKeyUp.bind(this)}
+          >
+          <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys}/>
+        </HotKeys>
+    </div>
 
     );
   }
