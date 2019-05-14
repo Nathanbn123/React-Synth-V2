@@ -60,6 +60,22 @@ class Keyboard extends React.Component {
               right: 503px;
               margin: none;
             }
+            .knob4small {
+              position: relative;
+              bottom: 216px;
+              right: 532px;
+              margin: none;
+            }
+            .knob5small {
+              position: relative;
+              bottom: 145px;
+              right: 561px;
+            }
+            .knob6small {
+              position: relative;
+              bottom: 76px;
+              right: 592px;
+            }
             .row {
               position: relative;
               display: flex;
@@ -583,7 +599,7 @@ class Keyboard extends React.Component {
             </div>
             <div className="grid-container">
               {this.props.imgSrc.map((instance, i) => (
-                <div key={i} onClick={() => {this.props.playSound(this.props.defaultKeys.notes2[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                <div key={i} className={this.props.keyClassNames[i]}>
                   <img className={this.props.imgClassNames[i][0]} src={require(`../synth art/${instance}.svg`)} alt="" />
                   <img className={this.props.imgClassNames[i][1]} src={require(`../synth art/${instance}push.svg`)} alt="" onClick={() =>{this.props.playSound(this.props.defaultKeys.notes2[i], this.props.defaultKeys.speed)}}/>
                 </div>
@@ -591,7 +607,7 @@ class Keyboard extends React.Component {
             </div>
             <div className="grid-container">
               {this.props.imgSrc.map((instance, i) => (
-                <div key={i} onClick={() =>{this.props.playSound(this.props.defaultKeys.notes3[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                <div key={i} className={this.props.keyClassNames[i]}>
                   <img className={this.props.imgClassNames[i][0]} src={require(`../synth art/${instance}.svg`)} alt="" />
                   <img className={this.props.imgClassNames[i][1]} src={require(`../synth art/${instance}push.svg`)} alt="" onClick={() =>{this.props.playSound(this.props.defaultKeys.notes3[i], this.props.defaultKeys.speed)}}/>
                 </div>
@@ -644,6 +660,48 @@ class Keyboard extends React.Component {
                 onChange={() =>{this.handleChange}}
                 updateKnob={this.props.updateKnob}
                 knobName={"attack"}
+                />
+            </div>
+            <div className="knob4small">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"decay"}
+                />
+            </div>
+            <div className="knob5small">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"sustain"}
+                />
+            </div>
+            <div className="knob6small">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"release"}
                 />
             </div>
             <div>

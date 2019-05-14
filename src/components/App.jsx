@@ -25,7 +25,6 @@ class App extends React.Component {
         speed: '8n'
       },
       hotKeys: {
-        userKeys: [],
         keys1: ['a', 'q', 'z', 's', 'w', 'x', 'd', 'e', 'c', 'f', 'r', 'v'],
         keys2: ['g', 't', 'b', 'h', 'y', 'n', 'j', 'u', 'm', 'k', 'i', 'm' ]
 
