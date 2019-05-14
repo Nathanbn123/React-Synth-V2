@@ -10,7 +10,7 @@ import keySeven from '../synth art/key7.svg';
 import Rectangle from '../synth art/Rectangle.svg';
 import finalKey from '../synth art/finalkey.svg';
 import finalKeyPush from '../synth art/finalkeypush.svg';
-import boardControl from '../synth art/boardcontrol.svg';
+import boardControl from '../synth art/boardcontrolnew.svg';
 import sideKey from '../synth art/sidekeycontrol.svg';
 
 class Keyboard extends React.Component {
