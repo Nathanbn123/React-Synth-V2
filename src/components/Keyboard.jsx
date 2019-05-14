@@ -39,17 +39,16 @@ class Keyboard extends React.Component {
                 justify-content: center;
                 margin-top: 250px;
               }
-              .knobs {
-                z-index: 10;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-areas: ". . . . . . . . . . . .";
-              }
               .knob1small {
                 position: relative;
-                bottom: 275px;
-                right: 926px;
-
+                bottom: 265px;
+                right: 915px;
+              }
+              .knob2small {
+                position: relative;
+                bottom: 263px;
+                right: 880px;
+                margin: none;
               }
               .row {
                 position: relative;
@@ -166,6 +165,33 @@ class Keyboard extends React.Component {
                   onChange={() =>{this.handleChange}}
                   />
               </div>
+              <div className="knob2small">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  />
+              </div>
+              <div className="knob3small">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  />
+              </div>
+
+
+
               <div>
                 <Knob
                   numTicks={125}
@@ -180,8 +206,6 @@ class Keyboard extends React.Component {
 
           </div>
 
-          <div className="knobs">
-          </div>
 
       </div>
 
