@@ -7,6 +7,9 @@ import Board from './Board';
 import Knob from './Knob/Knob';
 import './Knob/styling.scss';
 
+
+
+
 class App extends React.Component {
 
   constructor(props) {
@@ -54,7 +57,7 @@ class App extends React.Component {
           <Route path='/Error' component={Error404} />
         </Switch>
 
-      
+
       </div>
     );
   }

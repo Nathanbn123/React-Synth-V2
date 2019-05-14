@@ -12,10 +12,9 @@ import finalKey from '../synth art/finalkey.svg';
 import sideKey from '../synth art/sidekeycontrol.svg';
 import {HotKeys} from 'react-hotkeys';
 import Knob from './Knob/Knob';
-
 import finalKeyPush from '../synth art/finalkeypush.svg';
 import boardControl from '../synth art/boardcontrolnew.svg';
-
+import table from '../synth art/table.svg';
 
 
 
@@ -24,10 +23,6 @@ class Keyboard extends React.Component {
     super(props);
     console.log(this.props);
   }
-
-
-
-
 
 
 
@@ -41,7 +36,10 @@ class Keyboard extends React.Component {
               display: flex;
               border: 5px solid red;
               justify-content: center;
-              margin-top: 250px;
+              position: relative;
+              z-index: 10;
+              align-self: center;
+
             }
             .knob1small {
               position: relative;
@@ -549,9 +547,17 @@ class Keyboard extends React.Component {
             .sideKey {
               margin-left: 48px;
             }
+            .tableBackground img {
+              width: 100%;
+              z-index: -1;
+              position: absolute;
+            }
 
             `}
           </style>
+        <div className="tableBackground">
+          <img src={table}/>
+        </div>
         <div className="parent">
 
           <div className="background-board">
