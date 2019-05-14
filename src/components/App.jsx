@@ -5,7 +5,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Keyboard from './Keyboard';
 import Board from './Board';
 import Knob from './Knob/Knob';
-// import './Knob/styling.scss';
+import './Knob/styling.scss';
 
 class App extends React.Component {
 
@@ -24,18 +24,28 @@ class App extends React.Component {
         lastNote: 'G9',
         speed: '8n'
       },
-      options: {
-        oscillator: {
-          type: 'triangle',
-        },
-        envelope: {
-          attack: 0.005 ,
-          decay: 0.1 ,
-          sustain: 0.3 ,
-          release: 1
-          }
-      }
+      oscillator: {
+        type: 'triangle',
+      },
+      envelope: {
+        attack: 0.005,
+        decay: 0.1,
+        sustain: 0.3,
+        release: 1,
+        }
     };
+    this.handleKnobChange = this.handleKnobChange.bind(this);
+  }
+
+  handleKnobChange(name, degree) {
+    if(name == "attack") {
+      const newDegree = degree - 50;
+      const newAttack = (((newDegree * newDegree) / 2.704) / 5000 + 0.005);
+      this.state.envelope.attack = newAttack;
+      this.forceUpdate()
+
+
+    }
   }
 
   handleChange(newValue) {
@@ -45,17 +55,6 @@ class App extends React.Component {
     });
   };
 
-  // <div className="App">
-  //   <Knob
-  //     size={100}
-  //     numTicks={25}
-  //     degrees={260}
-  //     min={1}
-  //     max={100}
-  //     value={30}
-  //     color={true}
-  //     onChange={() =>{this.handleChange}}
-  //     />
   //
   //   <Knob
   //     numTicks={125}
@@ -67,8 +66,23 @@ class App extends React.Component {
   //     />
   // </div>
   render() {
+    console.log(this.state.envelope);
     return (
       <div>
+        <div className="App">
+          <Knob
+            size={100}
+            numTicks={25}
+            degrees={260}
+            min={1}
+            max={100}
+            value={30}
+            color={true}
+            onChange={() =>{this.handleChange}}
+            updateKnob={this.handleKnobChange}
+            knobName={"attack"}
+            />
+          </div>
         <Switch>
           <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames}/>} />
           <Route path='/Error' component={Error404} />
@@ -81,8 +95,6 @@ class App extends React.Component {
 
 
 }
-App.PropTypes = {
 
-};
 
 export default App;

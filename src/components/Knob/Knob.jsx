@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './styling.scss';
+import './styling.scss';
 
 
 class Knob extends React.Component {
   constructor(props) {
     super(props);
+    this.knobName = props.knobName;
+    this.updateKnob = props.updateKnob;
     this.fullAngle = props.degrees;
     this.startAngle = (360 - props.degrees) / 2;
     this.endAngle = this.startAngle + props.degrees;
@@ -67,7 +69,7 @@ class Knob extends React.Component {
       deg += 270;
     }
     let finalDeg = Math.min(Math.max(this.startAngle, deg), this.endAngle);
-    console.log(finalDeg);
+    this.updateKnob(this.knobName, finalDeg);
     return finalDeg;
   };
 
