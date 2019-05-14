@@ -25,7 +25,7 @@ class Board extends React.Component {
     this.state.synth.envelope.sustain = this.props.envelope.sustain;
     this.state.synth.envelope.release = this.props.envelope.release;
     this.state.synth.oscillator.type = this.props.oscillator.type;
-    console.log(this.state.synth.oscillator);
+    console.log(this.state.synth);
     this.state.synth.triggerAttackRelease(note, speed);
 
 
