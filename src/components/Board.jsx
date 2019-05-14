@@ -9,7 +9,7 @@ class Board extends React.Component {
 
   constructor(props) {
     super(props);
-    let synth = new Tone.Synth().toMaster();
+    const synth = new Tone.Synth().toMaster();
     this.state = {
       synth: synth,
     }
@@ -20,8 +20,14 @@ class Board extends React.Component {
 
 
   playSound(note, speed) {
+    this.state.synth.envelope.attack = this.props.envelope.attack;
+    this.state.synth.envelope.decay = this.props.envelope.decay;
+    this.state.synth.envelope.sustain = this.props.envelope.sustain;
+    this.state.synth.envelope.release = this.props.envelope.release;
+    this.state.synth.oscillator.type = this.props.oscillator.type;
     console.log(this.state.synth);
     this.state.synth.triggerAttackRelease(note, speed);
+
 
   }
 
@@ -37,7 +43,7 @@ class Board extends React.Component {
       <div>
         <KeyboardEventHandler handleKeys={['all']} onKeyEvent={(key) => this.setEventKey(key)} />
 
-        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys} imgClassNames={this.props.imgClassNames}/>
+        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys} imgClassNames={this.props.imgClassNames} updateKnob={this.props.updateKnob}/>
       </div>
 
 

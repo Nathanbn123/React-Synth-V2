@@ -45,8 +45,8 @@ class Keyboard extends React.Component {
             }
             .knob1small {
               position: relative;
-              bottom: 265px;
-              right: 915px;
+              bottom: 357px;
+              right: 922px;
             }
             .knob2small {
               position: relative;
@@ -600,7 +600,7 @@ class Keyboard extends React.Component {
 
             <div className="knob1small">
               <Knob
-                size={30}
+                size={40}
                 numTicks={15}
                 degrees={260}
                 min={1}
@@ -608,6 +608,8 @@ class Keyboard extends React.Component {
                 value={30}
                 color={true}
                 onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"oscillator"}
                 />
             </div>
             <div className="knob2small">
@@ -620,6 +622,7 @@ class Keyboard extends React.Component {
                 value={30}
                 color={true}
                 onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
                 />
             </div>
             <div className="knob3small">
@@ -632,6 +635,7 @@ class Keyboard extends React.Component {
                 value={30}
                 color={true}
                 onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
                 />
             </div>
             <div>
@@ -642,6 +646,7 @@ class Keyboard extends React.Component {
                 max={100}
                 value={0}
                 onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
                 />
             </div>
           </div>
