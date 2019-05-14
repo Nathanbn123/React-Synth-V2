@@ -30,6 +30,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-hotkeys": "^1.1.4",
     "react-router-dom": "^4.0.0",
     "rxjs": "^6.4.0",
     "style-loader": "^0.23.1",

@@ -11,13 +11,21 @@ import Rectangle from '../synth art/Rectangle.svg';
 import finalKey from '../synth art/finalkey.svg';
 import boardControl from '../synth art/boardcontrol.svg';
 import sideKey from '../synth art/sidekeycontrol.svg';
-
+import {HotKeys} from 'react-hotkeys';
 
 class Keyboard extends React.Component {
   constructor(props) {
     super(props);
     console.log(this.props);
   }
+
+
+
+
+
+
+
+
   render(){
     return (
       <div>
@@ -97,7 +105,7 @@ class Keyboard extends React.Component {
             </div>
             <div className="grid-container">
               <div className="one">
-                <img onClick={() => {this.props.playSound('B3', '8n')}} src={keyOne}/>
+                <img data-key="81" onClick={() => {this.props.playSound('B3', '8n')}} src={keyOne}/>
               </div>
               <div className="rectangleOne">
                 <img onClick={() => {this.props.playSound('C3', '8n')}} src={Rectangle}/>
