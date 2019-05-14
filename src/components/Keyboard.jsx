@@ -13,6 +13,7 @@ import finalKeyPush from '../synth art/finalkeypush.svg';
 import boardControl from '../synth art/boardcontrolnew.svg';
 import sideKey from '../synth art/sidekeycontrol.svg';
 
+
 class Keyboard extends React.Component {
   constructor(props) {
     super(props);
