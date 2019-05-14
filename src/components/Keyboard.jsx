@@ -9,9 +9,14 @@ import keySix from '../synth art/key6.svg';
 import keySeven from '../synth art/key7.svg';
 import Rectangle from '../synth art/Rectangle.svg';
 import finalKey from '../synth art/finalkey.svg';
+import sideKey from '../synth art/sidekeycontrol.svg';
+import {HotKeys} from 'react-hotkeys';
+import Knob from './Knob/Knob';
+
 import finalKeyPush from '../synth art/finalkeypush.svg';
 import boardControl from '../synth art/boardcontrolnew.svg';
-import sideKey from '../synth art/sidekeycontrol.svg';
+
+
 
 
 class Keyboard extends React.Component {
@@ -37,6 +42,17 @@ class Keyboard extends React.Component {
               border: 5px solid red;
               justify-content: center;
               margin-top: 250px;
+            }
+            .knob1small {
+              position: relative;
+              bottom: 265px;
+              right: 915px;
+            }
+            .knob2small {
+              position: relative;
+              bottom: 263px;
+              right: 877px;
+              margin: none;
             }
             .row {
               position: relative;
@@ -210,9 +226,6 @@ class Keyboard extends React.Component {
             .seven:hover .k7 {
               display: none;
             }
-
-
-
 
 
             .oneB {
@@ -539,14 +552,18 @@ class Keyboard extends React.Component {
 
             `}
           </style>
-        <div className="background-board">
-          <img src={boardControl}/>
-        </div>
+        <div className="parent">
+
+          <div className="background-board">
+            <img src={boardControl}/>
+          </div>
 
         <div className="row">
-            <div>
-              <img className="sideKey" src={sideKey}/>
-            </div>
+
+          <div>
+            <img src={sideKey}/>
+          </div>
+
             <div className="grid-container">
 
               {this.props.imgSrc.map((instance, i) => (
@@ -574,16 +591,68 @@ class Keyboard extends React.Component {
                 </div>
               ))}
             </div>
+
             <div  className='finalKey' >
               <img className="final" src={finalKey}/>
               <img className="finalpush" src={finalKeyPush} onClick={() => {this.props.playSound(this.props.defaultKeys.lastNote, this.props.defaultKeys.speed)}}/>
+
             </div>
 
+            <div className="knob1small">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                />
+            </div>
+            <div className="knob2small">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                />
+            </div>
+            <div className="knob3small">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                />
+            </div>
+            <div>
+              <Knob
+                numTicks={125}
+                degrees={180}
+                min={1}
+                max={100}
+                value={0}
+                onChange={() =>{this.handleChange}}
+                />
+            </div>
           </div>
+
+
+
         </div>
+      </div>
 
 
-      );
+  );
 
   }
 
