@@ -696,7 +696,7 @@ class Keyboard extends React.Component {
               </div>
               <div className="sevenC">
                 <img className="k7" src={keySeven}/>
-                <img className="k7push" src={keySevenDown}/>
+                <img onClick={() => {this.props.playSound('A#4', '8n')}} className="k7push" src={keySevenDown}/>
               </div>
               <div className="finalKey">
                 <img className="final" src={finalKey}/>
@@ -718,6 +718,7 @@ class Keyboard extends React.Component {
 
 Keyboard.propTypes = {
   defaultKeys: PropTypes.object,
+  playSound: PropTypes.func,
 };
 
 
