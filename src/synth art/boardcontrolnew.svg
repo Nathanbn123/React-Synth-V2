@@ -1,31 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="976px" height="701px" viewBox="0 0 976 701" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="976px" height="700px" viewBox="0 0 976 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>Group 4</title>
+    <title>Group 5</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-216.000000, -44.000000)">
-            <g id="Group-4" transform="translate(216.000000, 44.000000)">
+        <g id="Artboard" transform="translate(-37.000000, -45.000000)">
+            <g id="Group-5" transform="translate(37.000000, 44.500000)">
                 <g id="boardcontrols" transform="translate(0.000000, 0.500000)" fill="#303030" stroke="#000000">
                     <rect id="Rectangle" x="0.5" y="0.5" width="22" height="699"></rect>
                     <rect id="Rectangle" x="953.5" y="0.5" width="22" height="699"></rect>
                     <rect id="Rectangle" x="23.5" y="11.5" width="929" height="408"></rect>
                 </g>
+                <text id="SYNTHESIZER" font-family="Helvetica" font-size="10" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="873.495117" y="383.5">SYNTHESIZER</tspan>
+                </text>
+                <path d="M884,238.5 C884,236.290861 886.686292,234.5 890,234.5 C893.313708,234.5 896,236.290861 896,238.5 L884,238.5 Z" id="Combined-Shape" stroke="#C7BB3F" fill="#303030"></path>
+                <text id="KBD" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="911.859619" y="142.5">KBD</tspan>
+                </text>
+                <text id="VCO-1+2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="880.147217" y="142.5">VCO 1+2</tspan>
+                </text>
+                <text id="CV-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="880.33252" y="147.5">CV IN</tspan>
+                </text>
+                <text id="CV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="911.55542" y="147.5">CV OUT</tspan>
+                </text>
+                <text id="REV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="702.387939" y="191.5">REV OUT</tspan>
+                </text>
+                <text id="EG-1" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="794.802979" y="186.5">EG 1</tspan>
+                </text>
+                <text id="TRIG-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="795.33374" y="191.5">TRIG IN</tspan>
+                </text>
+                <text id="TRIG-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="909.056641" y="193.5">TRIG OUT</tspan>
+                </text>
+                <text id="TRIG-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="879.83374" y="193.5">TRIG IN</tspan>
+                </text>
                 <text id="CLOCK" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="629.386719" y="191.5">CLOCK</tspan>
                 </text>
+                <text id="INPUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="740" y="191.5">INPUT</tspan>
+                </text>
+                <text id="CONTROL" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="740.2771" y="186.5">CONTROL</tspan>
+                </text>
+                <text id="VCO-1" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="851.497559" y="147.5">VCO 1</tspan>
+                </text>
+                <text id="VCO-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="851.497559" y="166.5">VCO 2</tspan>
+                </text>
+                <text id="VCO-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="820.497559" y="199.5">VCO 2</tspan>
+                </text>
+                <text id="CV-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="852.33252" y="171.5">CV IN</tspan>
+                </text>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(836.000000, 311.500000) rotate(90.000000) translate(-836.000000, -311.500000) " points="836 309.5 838 313.5 834 313.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" transform="translate(617.000000, 252.500000) rotate(90.000000) translate(-617.000000, -252.500000) " points="617 250.5 619 254.5 615 254.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(742.000000, 206.500000) rotate(90.000000) translate(-742.000000, -206.500000) " points="742 204.5 744 208.5 740 208.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(910.000000, 162.500000) rotate(90.000000) translate(-910.000000, -162.500000) " points="910 160.5 912 164.5 908 164.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(900.000000, 162.500000) rotate(270.000000) translate(-900.000000, -162.500000) " points="900 160.5 902 164.5 898 164.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(839.000000, 197.500000) rotate(270.000000) translate(-839.000000, -197.500000) " points="839 195.5 841 199.5 837 199.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(869.000000, 145.500000) rotate(270.000000) translate(-869.000000, -145.500000) " points="869 143.5 871 147.5 867 147.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" transform="translate(638.000000, 239.500000) rotate(180.000000) translate(-638.000000, -239.500000) " points="638 237.5 640 241.5 636 241.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" points="603 103.5 605 107.5 601 107.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="436 102.5 438 106.5 434 106.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" points="654 103.5 656 107.5 652 107.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="767 172.5 769 176.5 765 176.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" points="654 57.5 656 61.5 652 61.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" points="612 57.5 614 61.5 610 61.5"></polygon>
                 <polygon id="Triangle" fill="#C7BB3F" transform="translate(679.000000, 46.500000) rotate(90.000000) translate(-679.000000, -46.500000) " points="679 44.5 681 48.5 677 48.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(708.000000, 46.500000) rotate(90.000000) translate(-708.000000, -46.500000) " points="708 44.5 710 48.5 706 48.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(709.000000, 55.500000) rotate(90.000000) translate(-709.000000, -55.500000) " points="709 53.5 711 57.5 707 57.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(756.000000, 46.500000) rotate(90.000000) translate(-756.000000, -46.500000) " points="756 44.5 758 48.5 754 48.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(804.000000, 46.500000) rotate(90.000000) translate(-804.000000, -46.500000) " points="804 44.5 806 48.5 802 48.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(852.000000, 46.500000) rotate(90.000000) translate(-852.000000, -46.500000) " points="852 44.5 854 48.5 850 48.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(906.000000, 46.500000) rotate(90.000000) translate(-906.000000, -46.500000) " points="906 44.5 908 48.5 904 48.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="738 57.5 740 61.5 736 61.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="738 103.5 740 107.5 736 107.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="780 57.5 782 61.5 778 61.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="776 103.5 778 107.5 774 107.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="819 57.5 821 61.5 817 61.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" points="817 172.5 819 176.5 815 176.5"></polygon>
+                <polygon id="Triangle" fill="#C7BB3F" transform="translate(742.000000, 243.500000) rotate(180.000000) translate(-742.000000, -243.500000) " points="742 241.5 744 245.5 740 245.5"></polygon>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="696" y="301.5" width="36" height="20"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="620" y="242.5" width="36" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="736" y="151.5" width="36" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="784" y="151.5" width="36" height="20"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="620" y="152.5" width="38" height="20"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="634" y="36.5" width="38" height="20"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="586" y="36.5" width="38" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="814" y="242.5" width="36" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="896" y="177.5" width="18" height="10"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="765" y="301.5" width="36" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="841" y="301.5" width="36" height="20"></rect>
                 <polygon id="Triangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" transform="translate(641.000000, 311.500000) rotate(90.000000) translate(-641.000000, -311.500000) " points="641 300.5 652 322.5 630 322.5"></polygon>
+                <polygon id="Triangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" transform="translate(741.000000, 252.500000) rotate(90.000000) translate(-741.000000, -252.500000) " points="741 241.5 752 263.5 730 263.5"></polygon>
+                <polygon id="Triangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" transform="translate(438.500000, 90.500000) rotate(90.000000) translate(-438.500000, -90.500000) " points="438.5 74 451.5 107 425.5 107"></polygon>
                 <text id="VOLTAGE-CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="96.2788086" y="31.5">VOLTAGE CONTROLLED</tspan>
                 </text>
@@ -137,6 +216,21 @@
                 <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="667.2229" y="147.5">OUT</tspan>
                 </text>
+                <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="708.2229" y="147.5">OUT</tspan>
+                </text>
+                <text id="REV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="819.387939" y="147.5">REV OUT</tspan>
+                </text>
+                <text id="INITIAL-GAIN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="803.310791" y="80.5">INITIAL GAIN</tspan>
+                </text>
+                <text id="CUTOFF-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="762.768066" y="80.5">CUTOFF FREQ</tspan>
+                </text>
+                <text id="CUTOFF-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="720.268066" y="80.5">CUTOFF FREQ</tspan>
+                </text>
                 <text id="EXIT-SIGNAL-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="677.519775" y="80.5">EXIT SIGNAL IN</tspan>
                 </text>
@@ -146,11 +240,62 @@
                 <text id="TOTAL" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="595.171631" y="80.5">TOTAL</tspan>
                 </text>
+                <text id="SIGNAL-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="906.449951" y="37.5">SIGNAL OUT</tspan>
+                </text>
+                <text id="PHONES" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="909.942139" y="82.5">PHONES</tspan>
+                </text>
+                <text id="POWER-OFF" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="858.862061" y="119.5">POWER OFF</tspan>
+                </text>
+                <text id="VOLUME" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="862.942139" y="47.5">VOLUME</tspan>
+                </text>
                 <text id="IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="599" y="237.5">IN</tspan>
                 </text>
+                <text id="IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="711" y="237.5">IN</tspan>
+                </text>
+                <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="762.2229" y="237.5">OUT</tspan>
+                </text>
+                <text id="PINK" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="798.665039" y="237.5">PINK</tspan>
+                </text>
+                <text id="WHITE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="849.945801" y="237.5">WHITE</tspan>
+                </text>
                 <text id="AMP" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="633.08252" y="313.5">AMP</tspan>
+                </text>
+                <text id="VCA" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="732.359619" y="254.5">VCA</tspan>
+                </text>
+                <text id="VCA" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="899.359619" y="184.5">VCA</tspan>
+                </text>
+                <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="741.2229" y="293.5">OUT</tspan>
+                </text>
+                <text id="BAND-PASS" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="699.374023" y="308.5">BAND PASS</tspan>
+                </text>
+                <text id="F-V" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="767.4729" y="308.5">F-V</tspan>
+                </text>
+                <text id="CONVERTER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="768.348145" y="313.5">CONVERTER</tspan>
+                </text>
+                <text id="ENVELOPE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="846.022217" y="308.5">ENVELOPE</tspan>
+                </text>
+                <text id="NOISE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="816.220459" y="249.5">NOISE</tspan>
+                </text>
+                <text id="GENERATOR" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="816.393311" y="254.5">GENERATOR</tspan>
                 </text>
                 <text id="MODULATION" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="622.516846" y="159.5">MODULATION</tspan>
@@ -176,11 +321,84 @@
                 <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="635.305908" y="53.5">OSCILLATOR 2</tspan>
                 </text>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="712" y="36.5" width="38" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="682" y="36.5" width="20" height="20"></rect>
+                <text id="CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="713.413818" y="48.5">CONTROLLED</tspan>
+                </text>
+                <text id="VOLTAGE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="713.55957" y="43.5">VOLTAGE</tspan>
+                </text>
+                <text id="VCO" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="684.08252" y="43.5">VCO</tspan>
+                </text>
+                <text id="MIXER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="684.08252" y="48.5">MIXER</tspan>
+                </text>
+                <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="713.305908" y="53.5">OSCILLATOR 2</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="759" y="36.5" width="38" height="20"></rect>
+                <text id="CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="760.413818" y="48.5">CONTROLLED</tspan>
+                </text>
+                <text id="VOLTAGE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="760.55957" y="43.5">VOLTAGE</tspan>
+                </text>
+                <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="760.305908" y="53.5">OSCILLATOR 2</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="807" y="36.5" width="38" height="20"></rect>
+                <text id="CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="808.413818" y="48.5">CONTROLLED</tspan>
+                </text>
+                <text id="VOLTAGE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="808.55957" y="43.5">VOLTAGE</tspan>
+                </text>
+                <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="808.305908" y="53.5">OSCILLATOR 2</tspan>
+                </text>
+                <text id="ENVELOPE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="738.522217" y="158.5">ENVELOPE</tspan>
+                </text>
+                <text id="GENERATOR" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="738.393311" y="163.5">GENERATOR</tspan>
+                </text>
+                <text id="1" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="739.109619" y="168.5">1</tspan>
+                </text>
+                <text id="2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="787.109619" y="168.5">2</tspan>
+                </text>
+                <text id="ENVELOPE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="786.522217" y="158.5">ENVELOPE</tspan>
+                </text>
+                <text id="GENERATOR" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="786.393311" y="163.5">GENERATOR</tspan>
+                </text>
+                <text id="FOLLOWER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="845.470459" y="313.5">FOLLOWER</tspan>
+                </text>
+                <text id="FILTER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="699.072266" y="313.5">FILTER</tspan>
+                </text>
                 <text id="SAMPLE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="623.357178" y="249.5">SAMPLE</tspan>
                 </text>
                 <text id="&amp;-HOLD" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="623.192139" y="254.5">&amp; HOLD</tspan>
+                </text>
+                <text id="CV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="809.05542" y="293.5">CV OUT</tspan>
+                </text>
+                <text id="PEAK" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="852.330078" y="289.5">PEAK</tspan>
+                </text>
+                <text id="ENV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="878.387939" y="293.5">ENV OUT</tspan>
+                </text>
+                <text id="TRIG-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="909.056641" y="293.5">TRIG OUT</tspan>
                 </text>
                 <text id="HOLD-TIME" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="526.431885" y="110.5">HOLD TIME</tspan>
@@ -202,6 +420,15 @@
                 </text>
                 <text id="LOW-CUT-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="647.377686" y="390.5">LOW CUT FREQ</tspan>
+                </text>
+                <text id="HIGH-CUT-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="705.322266" y="390.5">HIGH CUT FREQ</tspan>
+                </text>
+                <text id="CV-ADJUST" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="769.246338" y="390.5">CV ADJUST</tspan>
+                </text>
+                <text id="THRESHOLD-LEVEL" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
+                    <tspan x="817.103516" y="390.5">THRESHOLD LEVEL</tspan>
                 </text>
                 <text id="SUSTAIN-LEVEL" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
                     <tspan x="521.371582" y="320.5">SUSTAIN LEVEL</tspan>
@@ -264,7 +491,6 @@
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="159.5" y="28" width="1" height="377"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="90.5" y="28" width="1" height="377"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="435.5" y="156" width="1" height="249"></rect>
-                <path d="M434.809017,105 L434,105 L434.447214,105.723607 L434.809017,105 Z M436,102.618034 L436.447214,101.723607 L435.552786,101.723607 L436,102.618034 Z M437.190983,105 L437.552786,105.723607 L438,105 L437.190983,105 Z M436.5,116 L436.5,116.5 L437,116 L436.5,116 Z M435.5,116 L435,116 L435.5,116.5 L435.5,116 Z" id="Combined-Shape" stroke="#C7BB3F" fill="#C7BB3F"></path>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="573.5" y="28" width="1" height="377"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(757.000000, 274.000000) rotate(90.000000) translate(-757.000000, -274.000000) " x="756.5" y="93" width="1" height="362"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(620.000000, 311.500000) rotate(90.000000) translate(-620.000000, -311.500000) " x="619.5" y="302" width="1" height="19"></rect>
@@ -272,29 +498,81 @@
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(606.000000, 252.500000) rotate(90.000000) translate(-606.000000, -252.500000) " x="605.5" y="243" width="1" height="19"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(666.000000, 252.500000) rotate(90.000000) translate(-666.000000, -252.500000) " x="665.5" y="243" width="1" height="19"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(611.000000, 162.500000) rotate(90.000000) translate(-611.000000, -162.500000) " x="610.5" y="153" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(409.500000, 90.500000) rotate(90.000000) translate(-409.500000, -90.500000) " x="409" y="78.5" width="1" height="24"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(461.000000, 90.500000) rotate(90.000000) translate(-461.000000, -90.500000) " x="460.5" y="82" width="1" height="17"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(608.500000, 121.500000) rotate(90.000000) translate(-608.500000, -121.500000) " x="608" y="115.5" width="1" height="12"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(691.000000, 121.500000) rotate(90.000000) translate(-691.000000, -121.500000) " x="690.5" y="85" width="1" height="73"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(632.500000, 70.500000) rotate(90.000000) translate(-632.500000, -70.500000) " x="632" y="49.5" width="1" height="42"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(757.000000, 121.500000) rotate(90.000000) translate(-757.000000, -121.500000) " x="756.5" y="103" width="1" height="37"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(700.500000, 70.500000) rotate(90.000000) translate(-700.500000, -70.500000) " x="700" y="64.5" width="1" height="12"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(809.500000, 70.500000) rotate(90.000000) translate(-809.500000, -70.500000) " x="809" y="61.5" width="1" height="18"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(790.000000, 121.500000) rotate(90.000000) translate(-790.000000, -121.500000) " x="789.5" y="111" width="1" height="21"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(653.000000, 32.500000) rotate(90.000000) translate(-653.000000, -32.500000) " x="652.5" y="9" width="1" height="47"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(710.500000, 65.500000) rotate(90.000000) translate(-710.500000, -65.500000) " x="710" y="-42.5" width="1" height="216"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="614.5" y="121" width="1" height="41"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="602.5" y="107" width="1" height="15"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="435.5" y="106" width="1" height="10"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="653.5" y="107" width="1" height="15"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="727.5" y="121" width="1" height="85"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="800.5" y="71" width="1" height="51"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="775.5" y="106" width="1" height="62"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="904.5" y="187" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="904.5" y="162" width="1" height="15"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="845.5" y="186" width="1" height="12"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="873.5" y="145" width="1" height="41"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(905.000000, 162.500000) rotate(90.000000) translate(-905.000000, -162.500000) " x="904.5" y="159" width="1" height="7"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(872.000000, 145.500000) rotate(90.000000) translate(-872.000000, -145.500000) " x="871.5" y="143" width="1" height="5"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(667.000000, 162.500000) rotate(90.000000) translate(-667.000000, -162.500000) " x="666.5" y="153" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(726.000000, 162.500000) rotate(90.000000) translate(-726.000000, -162.500000) " x="725.5" y="153" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(734.000000, 206.500000) rotate(90.000000) translate(-734.000000, -206.500000) " x="733.5" y="200" width="1" height="13"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(781.500000, 154.500000) rotate(90.000000) translate(-781.500000, -154.500000) " x="781" y="152.5" width="1" height="4"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(822.500000, 162.500000) rotate(90.000000) translate(-822.500000, -162.500000) " x="822" y="160.5" width="1" height="4"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(779.500000, 168.500000) rotate(90.000000) translate(-779.500000, -168.500000) " x="779" y="164.5" width="1" height="8"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(782.500000, 206.500000) rotate(90.000000) translate(-782.500000, -206.500000) " x="782" y="190.5" width="1" height="32"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="766.5" y="175" width="1" height="32"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="713.5" y="166" width="1" height="18"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="816.5" y="175" width="1" height="32"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="653.5" y="61" width="1" height="13"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="705.5" y="55" width="1" height="15"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="779.5" y="122" width="1" height="33"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="694.5" y="72" width="1" height="2"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="611.5" y="61" width="1" height="10"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="629.5" y="33" width="1" height="13"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="675.5" y="33" width="1" height="14"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(627.500000, 46.500000) rotate(90.000000) translate(-627.500000, -46.500000) " x="627" y="43.5" width="1" height="6"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(704.500000, 46.500000) rotate(90.000000) translate(-704.500000, -46.500000) " x="704" y="44.5" width="1" height="4"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(752.000000, 46.500000) rotate(90.000000) translate(-752.000000, -46.500000) " x="751.5" y="44" width="1" height="5"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(800.000000, 46.500000) rotate(90.000000) translate(-800.000000, -46.500000) " x="799.5" y="44" width="1" height="5"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(848.000000, 46.500000) rotate(90.000000) translate(-848.000000, -46.500000) " x="847.5" y="44" width="1" height="5"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(899.500000, 46.500000) rotate(90.000000) translate(-899.500000, -46.500000) " x="899" y="40.5" width="1" height="12"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(880.500000, 162.500000) rotate(90.000000) translate(-880.500000, -162.500000) " x="880" y="156.5" width="1" height="12"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(843.500000, 197.500000) rotate(90.000000) translate(-843.500000, -197.500000) " x="843" y="194.5" width="1" height="6"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(860.000000, 186.500000) rotate(90.000000) translate(-860.000000, -186.500000) " x="859.5" y="172" width="1" height="29"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="602.5" y="66" width="1" height="8"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="737.5" y="61" width="1" height="13"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="737.5" y="106" width="1" height="16"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="779.5" y="61" width="1" height="13"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="818.5" y="61" width="1" height="13"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(719.000000, 252.500000) rotate(90.000000) translate(-719.000000, -252.500000) " x="718.5" y="243" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(761.000000, 252.500000) rotate(90.000000) translate(-761.000000, -252.500000) " x="760.5" y="243" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(864.000000, 206.500000) rotate(90.000000) translate(-864.000000, -206.500000) " x="863.5" y="153" width="1" height="107"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="752.5" y="210" width="1" height="17"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="741.5" y="227" width="1" height="15"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(747.500000, 227.500000) rotate(90.000000) translate(-747.500000, -227.500000) " x="747" y="221.5" width="1" height="12"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="637.5" y="213" width="1" height="25"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="661.5" y="312" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="830.5" y="312" width="1" height="20"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(832.500000, 311.500000) rotate(90.000000) translate(-832.500000, -311.500000) " x="832" y="309.5" width="1" height="4"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(686.000000, 311.500000) rotate(90.000000) translate(-686.000000, -311.500000) " x="685.5" y="302" width="1" height="19"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(746.500000, 331.500000) rotate(90.000000) translate(-746.500000, -331.500000) " x="746" y="246.5" width="1" height="170"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(742.000000, 311.500000) rotate(90.000000) translate(-742.000000, -311.500000) " x="741.5" y="302" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(754.000000, 311.500000) rotate(90.000000) translate(-754.000000, -311.500000) " x="753.5" y="302" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(812.000000, 311.500000) rotate(90.000000) translate(-812.000000, -311.500000) " x="811.5" y="302" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(887.000000, 311.500000) rotate(90.000000) translate(-887.000000, -311.500000) " x="886.5" y="302" width="1" height="19"></rect>
+                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(906.000000, 311.500000) rotate(90.000000) translate(-906.000000, -311.500000) " x="905.5" y="302" width="1" height="19"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(263.000000, 234.000000) scale(-1, 1) rotate(-90.000000) translate(-263.000000, -234.000000) " x="262.5" y="132" width="1" height="204"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(98.000000, 318.000000) scale(-1, 1) rotate(-90.000000) translate(-98.000000, -318.000000) " x="97.5" y="258" width="1" height="120"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(436.000000, 154.500000) scale(-1, 1) rotate(-90.000000) translate(-436.000000, -154.500000) " x="435.5" y="87" width="1" height="135"></rect>
-                <path d="M421.5,90.5 L422,90.5 L422,104.015542 L455.338338,90.5 L455.435836,90.5 L455.338338,90.5 L422,76.9844576 L422,90.5 L421.5,90.5 Z M455.435836,90.5 L463.266667,90.5 L455.435836,90.5 Z" id="Combined-Shape" stroke="#C7BB3F" stroke-width="2" fill="#303030"></path>
                 <g id="Group-2" transform="translate(313.000000, 70.500000)">
                     <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="20" cy="20" r="20"></circle>
                     <g id="Group" transform="translate(6.000000, 6.000000)">
@@ -303,6 +581,13 @@
                     </g>
                 </g>
                 <g id="Group-2" transform="translate(244.000000, 70.500000)">
+                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="20" cy="20" r="20"></circle>
+                    <g id="Group" transform="translate(6.000000, 6.000000)">
+                        <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
+                        <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
+                    </g>
+                </g>
+                <g id="Group-2" transform="translate(854.000000, 61.500000)">
                     <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="20" cy="20" r="20"></circle>
                     <g id="Group" transform="translate(6.000000, 6.000000)">
                         <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
@@ -393,6 +678,18 @@
                     <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
                     <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
                 </g>
+                <g id="Group" transform="translate(711.000000, 350.500000)">
+                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
+                    <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
+                </g>
+                <g id="Group" transform="translate(769.000000, 350.500000)">
+                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
+                    <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
+                </g>
+                <g id="Group" transform="translate(827.000000, 350.500000)">
+                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
+                    <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
+                </g>
                 <g id="Group" transform="translate(526.000000, 280.500000)">
                     <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
                     <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
@@ -443,6 +740,8 @@
                 </g>
                 <circle id="Oval" stroke="#000000" fill="#FF0000" cx="402" cy="223.5" r="3"></circle>
                 <circle id="Oval" stroke="#000000" fill="#FF0000" cx="505" cy="169.5" r="3"></circle>
+                <circle id="Oval" stroke="#000000" fill="#FF0000" cx="921" cy="280.5" r="3"></circle>
+                <circle id="Oval" stroke="#000000" fill="#FF0000" cx="859" cy="281.5" r="3"></circle>
                 <g id="Group-3" transform="translate(596.000000, 304.500000)">
                     <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
@@ -471,310 +770,6 @@
                     <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
                 </g>
-                <g id="Group-3" transform="translate(631.000000, 199.500000)">
-                    <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
-                    <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
-                </g>
-                <g id="Group-3" transform="translate(666.000000, 304.500000)">
-                    <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
-                    <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
-                </g>
-                <text id="SYNTHESIZER" font-family="Helvetica" font-size="10" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="873.495117" y="383.5">SYNTHESIZER</tspan>
-                </text>
-                <path d="M884,238.5 C884,236.290861 886.686292,234.5 890,234.5 C893.313708,234.5 896,236.290861 896,238.5 L884,238.5 Z" id="Combined-Shape" stroke="#C7BB3F" fill="#303030"></path>
-                <text id="KBD" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="911.859619" y="142.5">KBD</tspan>
-                </text>
-                <text id="VCO-1+2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="880.147217" y="142.5">VCO 1+2</tspan>
-                </text>
-                <text id="CV-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="880.33252" y="147.5">CV IN</tspan>
-                </text>
-                <text id="CV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="911.55542" y="147.5">CV OUT</tspan>
-                </text>
-                <text id="REV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="702.387939" y="191.5">REV OUT</tspan>
-                </text>
-                <text id="EG-1" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="794.802979" y="186.5">EG 1</tspan>
-                </text>
-                <text id="TRIG-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="795.33374" y="191.5">TRIG IN</tspan>
-                </text>
-                <text id="TRIG-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="909.056641" y="193.5">TRIG OUT</tspan>
-                </text>
-                <text id="TRIG-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="879.83374" y="193.5">TRIG IN</tspan>
-                </text>
-                <text id="INPUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="740" y="191.5">INPUT</tspan>
-                </text>
-                <text id="CONTROL" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="740.2771" y="186.5">CONTROL</tspan>
-                </text>
-                <text id="VCO-1" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="851.497559" y="147.5">VCO 1</tspan>
-                </text>
-                <text id="VCO-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="851.497559" y="166.5">VCO 2</tspan>
-                </text>
-                <text id="VCO-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="820.497559" y="199.5">VCO 2</tspan>
-                </text>
-                <text id="CV-IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="852.33252" y="171.5">CV IN</tspan>
-                </text>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(836.000000, 311.500000) rotate(90.000000) translate(-836.000000, -311.500000) " points="836 309.5 838 313.5 834 313.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(742.000000, 206.500000) rotate(90.000000) translate(-742.000000, -206.500000) " points="742 204.5 744 208.5 740 208.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(910.000000, 162.500000) rotate(90.000000) translate(-910.000000, -162.500000) " points="910 160.5 912 164.5 908 164.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(900.000000, 162.500000) rotate(270.000000) translate(-900.000000, -162.500000) " points="900 160.5 902 164.5 898 164.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(839.000000, 197.500000) rotate(270.000000) translate(-839.000000, -197.500000) " points="839 195.5 841 199.5 837 199.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(869.000000, 145.500000) rotate(270.000000) translate(-869.000000, -145.500000) " points="869 143.5 871 147.5 867 147.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="767 172.5 769 176.5 765 176.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(708.000000, 46.500000) rotate(90.000000) translate(-708.000000, -46.500000) " points="708 44.5 710 48.5 706 48.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(709.000000, 55.500000) rotate(90.000000) translate(-709.000000, -55.500000) " points="709 53.5 711 57.5 707 57.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(756.000000, 46.500000) rotate(90.000000) translate(-756.000000, -46.500000) " points="756 44.5 758 48.5 754 48.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(804.000000, 46.500000) rotate(90.000000) translate(-804.000000, -46.500000) " points="804 44.5 806 48.5 802 48.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(852.000000, 46.500000) rotate(90.000000) translate(-852.000000, -46.500000) " points="852 44.5 854 48.5 850 48.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(906.000000, 46.500000) rotate(90.000000) translate(-906.000000, -46.500000) " points="906 44.5 908 48.5 904 48.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="738 57.5 740 61.5 736 61.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="738 103.5 740 107.5 736 107.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="780 57.5 782 61.5 778 61.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="776 103.5 778 107.5 774 107.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="819 57.5 821 61.5 817 61.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" points="817 172.5 819 176.5 815 176.5"></polygon>
-                <polygon id="Triangle" fill="#C7BB3F" transform="translate(742.000000, 243.500000) rotate(180.000000) translate(-742.000000, -243.500000) " points="742 241.5 744 245.5 740 245.5"></polygon>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="696" y="301.5" width="36" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="736" y="151.5" width="36" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="784" y="151.5" width="36" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="814" y="242.5" width="36" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="896" y="177.5" width="18" height="10"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="765" y="301.5" width="36" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="841" y="301.5" width="36" height="20"></rect>
-                <polygon id="Triangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" transform="translate(741.000000, 252.500000) rotate(90.000000) translate(-741.000000, -252.500000) " points="741 241.5 752 263.5 730 263.5"></polygon>
-                <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="708.2229" y="147.5">OUT</tspan>
-                </text>
-                <text id="REV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="819.387939" y="147.5">REV OUT</tspan>
-                </text>
-                <text id="INITIAL-GAIN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="803.310791" y="80.5">INITIAL GAIN</tspan>
-                </text>
-                <text id="CUTOFF-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="762.768066" y="80.5">CUTOFF FREQ</tspan>
-                </text>
-                <text id="CUTOFF-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="720.268066" y="80.5">CUTOFF FREQ</tspan>
-                </text>
-                <text id="SIGNAL-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="906.449951" y="37.5">SIGNAL OUT</tspan>
-                </text>
-                <text id="PHONES" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="909.942139" y="82.5">PHONES</tspan>
-                </text>
-                <text id="POWER-OFF" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="858.862061" y="119.5">POWER OFF</tspan>
-                </text>
-                <text id="VOLUME" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="862.942139" y="47.5">VOLUME</tspan>
-                </text>
-                <text id="IN" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="711" y="237.5">IN</tspan>
-                </text>
-                <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="762.2229" y="237.5">OUT</tspan>
-                </text>
-                <text id="PINK" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="798.665039" y="237.5">PINK</tspan>
-                </text>
-                <text id="WHITE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="849.945801" y="237.5">WHITE</tspan>
-                </text>
-                <text id="VCA" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="732.359619" y="254.5">VCA</tspan>
-                </text>
-                <text id="VCA" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="899.359619" y="184.5">VCA</tspan>
-                </text>
-                <text id="OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="741.2229" y="293.5">OUT</tspan>
-                </text>
-                <text id="BAND-PASS" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="699.374023" y="308.5">BAND PASS</tspan>
-                </text>
-                <text id="F-V" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="767.4729" y="308.5">F-V</tspan>
-                </text>
-                <text id="CONVERTER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="768.348145" y="313.5">CONVERTER</tspan>
-                </text>
-                <text id="ENVELOPE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="846.022217" y="308.5">ENVELOPE</tspan>
-                </text>
-                <text id="NOISE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="816.220459" y="249.5">NOISE</tspan>
-                </text>
-                <text id="GENERATOR" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="816.393311" y="254.5">GENERATOR</tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="712" y="36.5" width="38" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="682" y="36.5" width="20" height="20"></rect>
-                <text id="CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="713.413818" y="48.5">CONTROLLED</tspan>
-                </text>
-                <text id="VOLTAGE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="713.55957" y="43.5">VOLTAGE</tspan>
-                </text>
-                <text id="VCO" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="684.08252" y="43.5">VCO</tspan>
-                </text>
-                <text id="MIXER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="684.08252" y="48.5">MIXER</tspan>
-                </text>
-                <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="713.305908" y="53.5">OSCILLATOR 2</tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="759" y="36.5" width="38" height="20"></rect>
-                <text id="CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="760.413818" y="48.5">CONTROLLED</tspan>
-                </text>
-                <text id="VOLTAGE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="760.55957" y="43.5">VOLTAGE</tspan>
-                </text>
-                <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="760.305908" y="53.5">OSCILLATOR 2</tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C7BB3F" stroke-width="2" fill="#303030" x="807" y="36.5" width="38" height="20"></rect>
-                <text id="CONTROLLED" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="808.413818" y="48.5">CONTROLLED</tspan>
-                </text>
-                <text id="VOLTAGE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="808.55957" y="43.5">VOLTAGE</tspan>
-                </text>
-                <text id="OSCILLATOR-2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="808.305908" y="53.5">OSCILLATOR 2</tspan>
-                </text>
-                <text id="ENVELOPE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="738.522217" y="158.5">ENVELOPE</tspan>
-                </text>
-                <text id="GENERATOR" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="738.393311" y="163.5">GENERATOR</tspan>
-                </text>
-                <text id="1" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="739.109619" y="168.5">1</tspan>
-                </text>
-                <text id="2" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="787.109619" y="168.5">2</tspan>
-                </text>
-                <text id="ENVELOPE" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="786.522217" y="158.5">ENVELOPE</tspan>
-                </text>
-                <text id="GENERATOR" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="786.393311" y="163.5">GENERATOR</tspan>
-                </text>
-                <text id="FOLLOWER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="845.470459" y="313.5">FOLLOWER</tspan>
-                </text>
-                <text id="FILTER" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="699.072266" y="313.5">FILTER</tspan>
-                </text>
-                <text id="CV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="809.05542" y="293.5">CV OUT</tspan>
-                </text>
-                <text id="PEAK" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="852.330078" y="289.5">PEAK</tspan>
-                </text>
-                <text id="ENV-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="878.387939" y="293.5">ENV OUT</tspan>
-                </text>
-                <text id="TRIG-OUT" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="909.056641" y="293.5">TRIG OUT</tspan>
-                </text>
-                <text id="HIGH-CUT-FREQ" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="705.322266" y="390.5">HIGH CUT FREQ</tspan>
-                </text>
-                <text id="CV-ADJUST" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="769.246338" y="390.5">CV ADJUST</tspan>
-                </text>
-                <text id="THRESHOLD-LEVEL" font-family="Helvetica" font-size="5" font-weight="normal" fill="#C7BB3F">
-                    <tspan x="817.103516" y="390.5">THRESHOLD LEVEL</tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(757.000000, 121.500000) rotate(90.000000) translate(-757.000000, -121.500000) " x="756.5" y="103" width="1" height="37"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(700.500000, 70.500000) rotate(90.000000) translate(-700.500000, -70.500000) " x="700" y="64.5" width="1" height="12"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(809.500000, 70.500000) rotate(90.000000) translate(-809.500000, -70.500000) " x="809" y="61.5" width="1" height="18"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(790.000000, 121.500000) rotate(90.000000) translate(-790.000000, -121.500000) " x="789.5" y="111" width="1" height="21"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="727.5" y="121" width="1" height="85"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="800.5" y="71" width="1" height="51"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="775.5" y="106" width="1" height="62"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="904.5" y="187" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="904.5" y="162" width="1" height="15"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="845.5" y="186" width="1" height="12"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="873.5" y="145" width="1" height="41"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(905.000000, 162.500000) rotate(90.000000) translate(-905.000000, -162.500000) " x="904.5" y="159" width="1" height="7"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(872.000000, 145.500000) rotate(90.000000) translate(-872.000000, -145.500000) " x="871.5" y="143" width="1" height="5"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(726.000000, 162.500000) rotate(90.000000) translate(-726.000000, -162.500000) " x="725.5" y="153" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(734.000000, 206.500000) rotate(90.000000) translate(-734.000000, -206.500000) " x="733.5" y="200" width="1" height="13"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(781.500000, 154.500000) rotate(90.000000) translate(-781.500000, -154.500000) " x="781" y="152.5" width="1" height="4"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(822.500000, 162.500000) rotate(90.000000) translate(-822.500000, -162.500000) " x="822" y="160.5" width="1" height="4"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(779.500000, 168.500000) rotate(90.000000) translate(-779.500000, -168.500000) " x="779" y="164.5" width="1" height="8"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(782.500000, 206.500000) rotate(90.000000) translate(-782.500000, -206.500000) " x="782" y="190.5" width="1" height="32"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="766.5" y="175" width="1" height="32"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="713.5" y="166" width="1" height="18"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="816.5" y="175" width="1" height="32"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="705.5" y="55" width="1" height="15"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="779.5" y="122" width="1" height="33"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="694.5" y="72" width="1" height="2"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(704.500000, 46.500000) rotate(90.000000) translate(-704.500000, -46.500000) " x="704" y="44.5" width="1" height="4"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(752.000000, 46.500000) rotate(90.000000) translate(-752.000000, -46.500000) " x="751.5" y="44" width="1" height="5"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(800.000000, 46.500000) rotate(90.000000) translate(-800.000000, -46.500000) " x="799.5" y="44" width="1" height="5"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(848.000000, 46.500000) rotate(90.000000) translate(-848.000000, -46.500000) " x="847.5" y="44" width="1" height="5"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(899.500000, 46.500000) rotate(90.000000) translate(-899.500000, -46.500000) " x="899" y="40.5" width="1" height="12"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(880.500000, 162.500000) rotate(90.000000) translate(-880.500000, -162.500000) " x="880" y="156.5" width="1" height="12"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(843.500000, 197.500000) rotate(90.000000) translate(-843.500000, -197.500000) " x="843" y="194.5" width="1" height="6"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(860.000000, 186.500000) rotate(90.000000) translate(-860.000000, -186.500000) " x="859.5" y="172" width="1" height="29"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="737.5" y="61" width="1" height="13"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="737.5" y="106" width="1" height="16"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="779.5" y="61" width="1" height="13"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="818.5" y="61" width="1" height="13"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(719.000000, 252.500000) rotate(90.000000) translate(-719.000000, -252.500000) " x="718.5" y="243" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(761.000000, 252.500000) rotate(90.000000) translate(-761.000000, -252.500000) " x="760.5" y="243" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(864.000000, 206.500000) rotate(90.000000) translate(-864.000000, -206.500000) " x="863.5" y="153" width="1" height="107"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="752.5" y="210" width="1" height="17"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="741.5" y="227" width="1" height="15"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(747.500000, 227.500000) rotate(90.000000) translate(-747.500000, -227.500000) " x="747" y="221.5" width="1" height="12"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" x="830.5" y="312" width="1" height="20"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(832.500000, 311.500000) rotate(90.000000) translate(-832.500000, -311.500000) " x="832" y="309.5" width="1" height="4"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(742.000000, 311.500000) rotate(90.000000) translate(-742.000000, -311.500000) " x="741.5" y="302" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(754.000000, 311.500000) rotate(90.000000) translate(-754.000000, -311.500000) " x="753.5" y="302" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(812.000000, 311.500000) rotate(90.000000) translate(-812.000000, -311.500000) " x="811.5" y="302" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(887.000000, 311.500000) rotate(90.000000) translate(-887.000000, -311.500000) " x="886.5" y="302" width="1" height="19"></rect>
-                <rect id="Rectangle" stroke="#C7BB3F" fill="#FFFFFF" transform="translate(906.000000, 311.500000) rotate(90.000000) translate(-906.000000, -311.500000) " x="905.5" y="302" width="1" height="19"></rect>
-                <g id="Group-2" transform="translate(854.000000, 61.500000)">
-                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="20" cy="20" r="20"></circle>
-                    <g id="Group" transform="translate(6.000000, 6.000000)">
-                        <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
-                        <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
-                    </g>
-                </g>
-                <g id="Group" transform="translate(711.000000, 350.500000)">
-                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
-                    <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
-                </g>
-                <g id="Group" transform="translate(769.000000, 350.500000)">
-                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
-                    <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
-                </g>
-                <g id="Group" transform="translate(827.000000, 350.500000)">
-                    <circle id="Oval" stroke="#000000" fill="#4B4B4B" cx="14" cy="14" r="14"></circle>
-                    <rect id="Rectangle" stroke="#FFFFFF" fill="#D8D8D8" x="13.5" y="0.5" width="1" height="12"></rect>
-                </g>
-                <circle id="Oval" stroke="#000000" fill="#FF0000" cx="921" cy="280.5" r="3"></circle>
-                <circle id="Oval" stroke="#000000" fill="#FF0000" cx="859" cy="281.5" r="3"></circle>
                 <g id="Group-3" transform="translate(707.000000, 245.500000)">
                     <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
@@ -800,6 +795,10 @@
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
                 </g>
                 <g id="Group-3" transform="translate(812.000000, 88.500000)">
+                    <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
+                    <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
+                </g>
+                <g id="Group-3" transform="translate(631.000000, 199.500000)">
                     <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
                 </g>
@@ -875,6 +874,10 @@
                     <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
                 </g>
+                <g id="Group-3" transform="translate(666.000000, 304.500000)">
+                    <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
+                    <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
+                </g>
                 <g id="Group-3" transform="translate(739.000000, 304.500000)">
                     <circle id="Oval" stroke="#000000" fill="#D8D8D8" cx="7" cy="7" r="7"></circle>
                     <circle id="Oval" fill="#000000" cx="7" cy="7" r="4"></circle>
@@ -883,7 +886,13 @@
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#C7BB3F" transform="translate(921.000000, 237.000000) rotate(90.000000) translate(-921.000000, -237.000000) " x="920" y="235.5" width="2" height="3"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#C7BB3F" transform="translate(890.000000, 235.000000) rotate(90.000000) translate(-890.000000, -235.000000) " x="890" y="234.5" width="1" height="1"></rect>
                 <rect id="Rectangle" stroke="#C7BB3F" fill="#C7BB3F" transform="translate(921.000000, 238.000000) rotate(90.000000) translate(-921.000000, -238.000000) " x="921" y="234.5" width="1" height="7"></rect>
-                <path d="M877.379446,371 L877.379446,371.5 L877.879446,371 L877.379446,371 Z M873.5,371 L873,371 L873.5,371.5 L873.5,371 Z M873.5,350.019053 L873.5,349.519053 L873,350.019053 L873.5,350.019053 Z M877.379446,350.019053 L877.879446,350.019053 L877.879446,349.972965 L878.035364,350.122799 L878.361865,349.931277 L878.108882,349.5 L877.879446,349.738752 L877.879446,349.519053 L877.379446,349.519053 L877.379446,350.019053 Z M891.391302,350.019037 L891.391302,349.519037 L890.891302,350.019037 L891.391302,350.019037 Z M895.270748,350.019037 L895.770748,350.019037 L895.270748,349.519037 L895.270748,350.019037 Z M895.270748,371 L895.270748,371.5 L895.770748,371 L895.270748,371 Z M891.391302,371 L890.891302,371 L891.391302,371.5 L891.391302,371 Z M919.880229,371.38861 L919.880229,371.5 L919.68137,371.041246 L919.722017,371.023626 L919.880229,371.38861 Z M918.919196,371 L910.885025,360.552156 L918.984771,350.019037 L914.611951,350.019037 L908.698615,357.708892 L902.785278,350.019037 L898.412458,350.019037 L906.512205,360.552156 L898.478034,371 L902.850854,371 L908.698615,363.39542 L914.546376,371 L918.919196,371 Z M897.813876,371 L897.909028,371.041246 L897.710169,371.5 L897.710169,371 L897.813876,371 Z M938.599685,350 L921.5,358.580763 L921.5,361.833333 L939.571429,361.833333 L939.571429,371 L943.5,371 L943.5,350 L938.599685,350 Z M939.571429,352.816326 L939.571429,359.166667 L926.916515,359.166667 L939.571429,352.816326 Z" id="Combined-Shape" stroke="#C7BB3F" fill="#C7BB3F"></path>
+                <g id="Group-4" transform="translate(872.000000, 347.500000)" fill="#C7BB3F" stroke="#C7BB3F">
+                    <path d="M1.3033887,12.2107289 L0.850965482,15.5994384 L23.1939794,12.4036877 L23.6464027,9.01497817 L1.3033887,12.2107289 Z" id="Rectangle" transform="translate(12.248684, 12.307208) rotate(52.000000) translate(-12.248684, -12.307208) "></path>
+                    <path d="M10.3912934,12.0697954 L10.3912934,15.9492413 L31.3722567,15.9492413 L31.3722567,12.0697954 L10.3912934,12.0697954 Z" id="Rectangle" transform="translate(20.881775, 14.009518) rotate(90.000000) translate(-20.881775, -14.009518) "></path>
+                    <path d="M-7.5,12.0698037 L-7.5,15.9492496 L13.4809468,15.9492496 L13.4809468,12.0698037 L-7.5,12.0698037 Z" id="Rectangle" transform="translate(2.990473, 14.009527) rotate(90.000000) translate(-2.990473, -14.009527) "></path>
+                    <path d="M47.4309793,24.8886105 L47.4309793,25 L47.2321207,24.5412459 L47.2727677,24.5236265 L47.4309793,24.8886105 Z M46.4699465,24.5 L38.4357753,14.0521562 L46.5355216,3.51903673 L42.1627015,3.51903673 L36.2493652,11.208892 L30.3360289,3.51903673 L25.9632088,3.51903673 L34.0629552,14.0521562 L26.0287839,24.5 L30.4016041,24.5 L36.2493652,16.8954203 L42.0971264,24.5 L46.4699465,24.5 Z M25.3646262,24.5 L25.459778,24.5412459 L25.2609194,25 L25.2609194,24.5 L25.3646262,24.5 Z" id="Combined-Shape"></path>
+                    <path d="M66.1504355,3.5 L49.0507504,12.0807633 L49.0507504,15.3333333 L67.122179,15.3333333 L67.122179,24.5 L71.0507504,24.5 L71.0507504,3.5 L66.1504355,3.5 Z M67.122179,6.31632636 L67.122179,12.6666667 L54.4672654,12.6666667 L67.122179,6.31632636 Z" id="Combined-Shape"></path>
+                </g>
             </g>
         </g>
     </g>
