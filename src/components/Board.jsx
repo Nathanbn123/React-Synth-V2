@@ -22,7 +22,7 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc}/>
+        <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys}/>
       </div>
 
     );
