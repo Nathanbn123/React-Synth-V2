@@ -5,7 +5,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Keyboard from './Keyboard';
 import Board from './Board';
 import Knob from './Knob/Knob';
-// import './Knob/styling.scss';
+import './Knob/styling.scss';
 
 class App extends React.Component {
 
@@ -44,35 +44,16 @@ class App extends React.Component {
     });
   };
 
-  // <div className="App">
-  //   <Knob
-  //     size={100}
-  //     numTicks={25}
-  //     degrees={260}
-  //     min={1}
-  //     max={100}
-  //     value={30}
-  //     color={true}
-  //     onChange={() =>{this.handleChange}}
-  //     />
-  //
-  //   <Knob
-  //     numTicks={125}
-  //     degrees={180}
-  //     min={1}
-  //     max={100}
-  //     value={0}
-  //     onChange={() =>{this.handleChange}}
-  //     />
-  // </div>
   render() {
     return (
       <div>
+
         <Switch>
           <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
+      
       </div>
     );
   }

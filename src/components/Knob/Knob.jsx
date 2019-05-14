@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './styling.scss';
+import './styling.scss';
 
 
 class Knob extends React.Component {
@@ -83,9 +83,9 @@ class Knob extends React.Component {
       const tick = {
         deg: deg,
         tickStyle: {
-          height: size + 10,
-          left: size - 1,
-          top: size + 2,
+          height: size,
+          left: size,
+          top: size,
           transform: "rotate(" + deg + "deg)",
           transformOrigin: "top"
         }
