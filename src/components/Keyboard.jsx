@@ -110,21 +110,21 @@ class Keyboard extends React.Component {
             </div>
             <div className="grid-container">
               {this.props.imgSrc.map((instance, i) => (
-                <div onClick={() =>{this.props.playSound(this.props.defaultKeys.notes1[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                <div key={i} onClick={() =>{this.props.playSound(this.props.defaultKeys.notes1[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
                   <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
                 </div>
               ))}
             </div>
             <div className="grid-container">
               {this.props.imgSrc.map((instance, i) => (
-                <div onClick={() => {this.props.playSound(this.props.defaultKeys.notes2[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                <div key={i} onClick={() => {this.props.playSound(this.props.defaultKeys.notes2[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
                   <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
                 </div>
               ))}
             </div>
             <div className="grid-container">
               {this.props.imgSrc.map((instance, i) => (
-                <div onClick={() =>{this.props.playSound(this.props.defaultKeys.notes3[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
+                <div key={i} onClick={() =>{this.props.playSound(this.props.defaultKeys.notes3[i], this.props.defaultKeys.speed)}} className={this.props.keyClassNames[i]}>
                   <img src={require(`../synth art/${instance}.svg`)} alt="" key={i} />
                 </div>
               ))}
