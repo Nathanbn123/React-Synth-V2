@@ -13,6 +13,7 @@ import sideKey from '../synth art/sidekeycontrol.svg';
 import {HotKeys} from 'react-hotkeys';
 import Knob from './Knob/Knob';
 import './masterStyling.scss';
+import table from '../synth art/table.svg';
 
 
 
@@ -39,7 +40,9 @@ class Keyboard extends React.Component {
   render(){
 
     return (
-      <div>
+      <div className="outer">
+
+        <img src={table}/>
 
         <div className="parent">
 
@@ -171,23 +174,14 @@ class Keyboard extends React.Component {
                 knobName={"release"}
                 />
             </div>
-            <div>
-              <Knob
-                numTicks={125}
-                degrees={180}
-                min={1}
-                max={100}
-                value={0}
-                onChange={() =>{this.handleChange}}
-                updateKnob={this.props.updateKnob}
-                />
-            </div>
           </div>
 
 
 
         </div>
+
       </div>
+
 
 
   );
