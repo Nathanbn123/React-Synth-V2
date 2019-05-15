@@ -48,6 +48,7 @@ class Keyboard extends React.Component {
                 <img  src={sideKey}/>
               </div>
 
+
               <div className="grid-container">
                 <div className="background-board">
                   <img className="boardControl" src={boardControl}/>
@@ -57,10 +58,8 @@ class Keyboard extends React.Component {
                   <div key={i} className={this.props.keyClassNames[i]}>
                     <img className={this.props.imgClassNames[i][0]} src={require(`../synth art/${instance}.svg`)} alt="" />
                     <img className={this.props.imgClassNames[i][1]} src={require(`../synth art/${instance}push.svg`)} alt="" onClick={() =>{this.props.playSound(this.props.defaultKeys.notes1[i], this.props.defaultKeys.speed)}}/>
-
                   </div>
                 ))}
-
               </div>
               <div className="grid-container">
                 {this.props.imgSrc.map((instance, i) => (
@@ -167,6 +166,62 @@ class Keyboard extends React.Component {
                   onChange={() =>{this.handleChange}}
                   updateKnob={this.props.updateKnob}
                   knobName={"release"}
+                  />
+              </div>
+              <div className="knobLow">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"low"}
+                  />
+              </div>
+              <div className="knobHigh">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"high"}
+                  />
+              </div>
+              <div className="knobhighFrequency">
+                <Knob
+                  size={40}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"highFrequency"}
+                  />
+              </div>
+              <div className="knoblowFrequency">
+                <Knob
+                  size={40}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"lowFrequency"}
                   />
               </div>
 
