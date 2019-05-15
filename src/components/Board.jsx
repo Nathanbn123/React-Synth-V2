@@ -33,6 +33,8 @@ class Board extends React.Component {
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
     this.cancelSound(synth, note, key);
+    synth.volume.value = this.props.volume;
+
     if(keyboard == 'trigger') {
       synth.triggerAttack(note, speed)
     } else {
