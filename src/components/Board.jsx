@@ -16,7 +16,8 @@ class Board extends React.Component {
   }
 
 
-  playSound(note, speed, keyboard) {
+  playSound(note, speed, keyboard, key) {
+    console.log(note);
     const eq = new Tone.EQ3({
       low: this.props.frequency.low,
       mid: this.props.frequency.mid,
@@ -31,29 +32,41 @@ class Board extends React.Component {
     synth.envelope.sustain = this.props.envelope.sustain;
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
-    // this.state.synth.frequency.high = 0;
+    this.cancelSound(synth, note, key);
     if(keyboard == 'trigger') {
       synth.triggerAttack(note, speed)
-    } else if(keyboard == 'release') {
-      synth.triggerRelease(note, speed)
     } else {
       synth.triggerAttackRelease(note, speed);
-
     }
 
   }
 
-  setEventKey(key) {
+
+  cancelSound(synth, note, key) {
+    let that = this;
+    document.addEventListener('keyup', function(info) {
+      if(info.key == key) {
+        synth.triggerRelease()
+      }
+      this.removeEventListener('keyup', that.removedEventListener, false);
+    });
+  }
+
+  removedEventListener() {
+    console.log('remove event addEventListener')
+  }
+
+  setEventKey(key, argument) {
     const length = this.props.hotKeys.length;
     for(let i = 0; i < length; i++) {
       if(this.props.hotKeys[i][0] == key) {
-        this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
+        this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed, argument, key)
+        return;
       }
     }
   }
 
   pressed(info) {
-    console.log(info.type)
     let newArray = this.props.activeKeys;
     let isActive = false;
     for(let a = 0; a < this.props.activeKeys.length; a++) {
@@ -64,6 +77,7 @@ class Board extends React.Component {
     if(info) {
       if(info.type == 'keydown' && isActive == false) {
         newArray.push(info.key);
+        this.setEventKey(info.key, 'trigger')
       } else if(info.type == 'keyup') {
         let currentArray = [];
         for(let i = 0; i < this.props.activeKeys.length; i++) {
@@ -87,8 +101,6 @@ class Board extends React.Component {
     document.addEventListener('keyup', this.pressed);
     return (
       <div>
-        <KeyboardEventHandler handleKeys={['all']} onKeyEvent={(key) => this.setEventKey(key)} />
-
         <Keyboard playSound={this.playSound} state={this.state} keyClassNames={this.props.keyClassNames} imgSrc={this.props.imgSrc} defaultKeys={this.props.defaultKeys} imgClassNames={this.props.imgClassNames} updateKnob={this.props.updateKnob}/>
       </div>
 
