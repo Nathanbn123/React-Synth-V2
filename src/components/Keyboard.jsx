@@ -30,12 +30,6 @@ class Keyboard extends React.Component {
   }
 
 
-
-
-
-
-
-
   render(){
 
     return (

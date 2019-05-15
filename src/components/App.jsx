@@ -25,8 +25,9 @@ class App extends React.Component {
         speed: '8n'
       },
       hotKeys: {
-        keys1: ['a', 'q', 'z', 's', 'w', 'x', 'd', 'e', 'c', 'f', 'r', 'v'],
-        keys2: ['g', 't', 'b', 'h', 'y', 'n', 'j', 'u', 'm', 'k', 'i', 'm' ]
+        blackKeys: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', 'backspace', '\\'],
+        keys1: ['a', 'z', 's', 'x', 'd', 'c', 'f', 'v', 'g', 'b', 'h', 'n'],
+        keys2: ['j', 'm', 'k', ',', 'l', '.', ';', '/', "'", 'shift', 'enter', 'ctrl' ]
 
     },
       oscillator: {
