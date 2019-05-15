@@ -25,12 +25,16 @@ class Board extends React.Component {
       highFrequency: this.props.frequency.highFrequency,
 
     }).toMaster();
+
+
     const synth = new Tone.Synth().connect(eq);
+    console.log(synth)
     synth.envelope.attack = this.props.envelope.attack;
     synth.envelope.decay = this.props.envelope.decay;
     synth.envelope.sustain = this.props.envelope.sustain;
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
+    // synth.portamento = this.props.portamento.currentPort;
     synth.volume.value = this.props.volume;
     // this.state.synth.frequency.high = 0;
     if(keyboard == 'trigger') {
@@ -55,6 +59,7 @@ class Board extends React.Component {
 
   pressed(info) {
     console.log(info.type)
+
     let newArray = this.props.activeKeys;
     let isActive = false;
     for(let a = 0; a < this.props.activeKeys.length; a++) {

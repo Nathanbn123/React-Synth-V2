@@ -220,7 +220,7 @@ class Keyboard extends React.Component {
                   knobName={"lowFrequency"}
                   />
               </div>
-              <div className="knoblowFrequency">
+              <div className="knobVolume">
                 <Knob
                   size={40}
                   numTicks={15}
@@ -233,15 +233,25 @@ class Keyboard extends React.Component {
                   updateKnob={this.props.updateKnob}
                   knobName={"volume"}
                   />
+              <div className="knobVolume">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"portamento"}
+                  />
       </div>
 
 
           </div>
-
-
-
-
         </div>
+      </div>
       </div>
 
 
