@@ -16,7 +16,7 @@ class Board extends React.Component {
   }
 
 
-  playSound(note, speed) {
+  playSound(note, speed, keyboard) {
     const eq = new Tone.EQ3({
       low: this.props.frequency.low,
       mid: this.props.frequency.mid,
@@ -32,7 +32,14 @@ class Board extends React.Component {
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
     // this.state.synth.frequency.high = 0;
-    synth.triggerAttackRelease(note, speed);
+    if(keyboard == 'trigger') {
+      synth.triggerAttack(note, speed)
+    } else if(keyboard == 'release') {
+      synth.triggerRelease(note, speed)
+    } else {
+      synth.triggerAttackRelease(note, speed);
+
+    }
 
   }
 
@@ -40,7 +47,7 @@ class Board extends React.Component {
     const length = this.props.hotKeys.length;
     for(let i = 0; i < length; i++) {
       if(this.props.hotKeys[i][0] == key) {
-        // this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
+        this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
       }
     }
   }
