@@ -150,7 +150,6 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-<<<<<<< HEAD
           <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
