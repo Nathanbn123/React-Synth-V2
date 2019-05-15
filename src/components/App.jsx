@@ -21,13 +21,11 @@ class App extends React.Component {
         notes1: ['B3', 'C3', 'C#3', 'D3', 'D#3', 'E3', 'F3', 'F#3', 'G3', 'G#3', 'A4', 'A#4'],
         notes2: ['B4', 'C4', 'C#4', 'D4', 'D#4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A5', 'A#5' ],
         notes3: ['B5', 'C5', 'C#5', 'D5', 'D#5', 'E5', 'F5', 'F#5', 'G5', 'G#5', 'A6', 'A#6'],
-        lastNote: 'G9',
+        lastNote: ['G9'],
         speed: '8n'
       },
       hotKeys: {
-        keys1: ['a', 'q', 'z', 's', 'w', 'x', 'd', 'e', 'c', 'f', 'r', 'v'],
-        keys2: ['g', 't', 'b', 'h', 'y', 'n', 'j', 'u', 'm', 'k', 'i', 'm' ]
-
+        currentHotKeys: [],
     },
       oscillator: {
         type: 'triangle',
@@ -39,7 +37,38 @@ class App extends React.Component {
         release: 1,
         }
     };
+    const exKeys= {
+      keyAssignments: ['a', '`', 'z', '1', 's', 'x', '2', 'd', '3', 'c', '4', 'f','v', '5', 'g', '6', 'b', 'h', '7', 'n', '8', 'j', '9', 'm', '0', 'k', ',', '-', 'l', '=', '.', 'backspace', '.', '\\', ';', '/', "'"]
+    }
     this.handleKnobChange = this.handleKnobChange.bind(this);
+    this.createNewHotKeys = this.createNewHotKeys.bind(this);
+    this.createNewHotKeys(exKeys.keyAssignments)
+  }
+
+
+  createNewHotKeys(array) {
+    let notesArray = [];
+    let newArray = [];
+    notesArray.push(this.state.defaultKeys.notes1);
+    notesArray.push(this.state.defaultKeys.notes2);
+    notesArray.push(this.state.defaultKeys.notes3);
+    notesArray.push(this.state.defaultKeys.lastNote);
+
+    let notesArrayLength = notesArray.length;
+    let a = 0;
+    for(let i = 0; i < notesArrayLength; i++) {
+
+      for(let e = 0; e < notesArray[i].length; e++) {
+        const key = array[a];
+        const note = notesArray[i][e];
+        newArray.push([key, note])
+        a++;
+      }
+    }
+    this.state.hotKeys.currentHotKeys = newArray;
+    this.forceUpdate()
+
+
   }
 
   handleKnobChange(name, degree) {
@@ -87,10 +116,11 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state.hotKeys.currentHotKeys)
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange}/>} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} hotKeys={this.state.hotKeys.currentHotKeys}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
