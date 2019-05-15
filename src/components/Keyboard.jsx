@@ -37,8 +37,8 @@ class Keyboard extends React.Component {
 
 
 
-            <div className="table">
-              <img src={table}/>
+            <div className="table" style={{zIndex: -100}}>
+              <img style={{zIndex: -100}} src={table}/>
             </div>
 
 
@@ -51,11 +51,11 @@ class Keyboard extends React.Component {
 
               <div className="grid-container">
                 <div className="background-board">
-                  <img className="boardControl" src={boardControl}/>
+                  <img className="boardControl" style={{zIndex: -1}} src={boardControl}/>
 
                 </div>
                 {this.props.imgSrc.map((instance, i) => (
-                  <div key={i} className={this.props.keyClassNames[i]}>
+                  <div key={i} style={{zIndex: 100}} className={this.props.keyClassNames[i]}>
                     <img className={this.props.imgClassNames[i][0]} src={require(`../synth art/${instance}.svg`)} alt="" />
                     <img className={this.props.imgClassNames[i][1]} src={require(`../synth art/${instance}push.svg`)} alt="" onClick={() =>{this.props.playSound(this.props.defaultKeys.notes1[i], this.props.defaultKeys.speed)}}/>
                   </div>
