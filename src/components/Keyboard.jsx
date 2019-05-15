@@ -77,7 +77,7 @@ class Keyboard extends React.Component {
 
             <div  className='finalKey' >
               <img className="final" src={finalKey}/>
-              <img className="finalpush" src={finalKeyPush} onClick={() => {this.props.playSound(this.props.defaultKeys.lastNote, this.props.defaultKeys.speed)}}/>
+              <img className="finalpush" src={finalKeyPush} onClick={() => {this.props.playSound(this.props.defaultKeys.lastNote[0], this.props.defaultKeys.speed)}}/>
 
             </div>
 
