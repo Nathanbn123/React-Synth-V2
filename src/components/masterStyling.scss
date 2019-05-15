@@ -1,9 +1,28 @@
+
+.table {
+  position: absolute;
+  top: -20px;
+  margin: 0;
+}
+.boardControl {
+  position: relative;
+  top: -420px;
+  left: -73px;
+}
+
 .parent {
   display: flex;
   border: 5px solid red;
   justify-content: center;
-  margin-top: 250px;
+  align-self: center;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
 }
+.row{
+  top: 693px;
+}
+
 .knob1small {
   position: relative;
   bottom: 357px;
@@ -47,6 +66,8 @@
 }
 .background-board {
   position: absolute;
+
+
 }
 .grid-container {
   display: grid;
