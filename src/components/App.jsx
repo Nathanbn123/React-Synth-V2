@@ -43,7 +43,10 @@ class App extends React.Component {
         low: 0,
         highFrequency: 4000,
         lowFrequency: 450,
-      }
+      },
+      volume: {
+      currentVolume: 0,
+    }
     };
     const exKeys= {
       keyAssignments: ['a', '`', 'z', '1', 's', 'x', '2', 'd', '3', 'c', '4', 'f','v', '5', 'g', '6', 'b', 'h', '7', 'n', '8', 'j', '9', 'm', '0', 'k', ',', '-', 'l', '=', '.', 'backspace', '.', '\\', ';', '/', "'"]
@@ -138,6 +141,12 @@ class App extends React.Component {
       newLowFrequency = parseFloat(newLowFrequency.toFixed(1));
       this.state.frequency.lowFrequency = newLowFrequency;
     }
+    if(name == "volume") {
+      let newVolume = ((newDegree * newDegree) / 920) -40;
+      newVolume = parseFloat(newVolume.toFixed(1));
+      console.log(newVolume);
+      this.state.volume.currentVolume = newVolume;
+    }
     this.forceUpdate()
   }
 
@@ -156,7 +165,8 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys} activeKeys={this.state.hotKeys.activeKeys} updateActive={this.updateKeys}/>} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys} activeKeys={this.state.hotKeys.activeKeys} updateActive={this.updateKeys}
+          volume={this.state.volume.currentVolume}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 

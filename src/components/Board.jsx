@@ -31,6 +31,7 @@ class Board extends React.Component {
     synth.envelope.sustain = this.props.envelope.sustain;
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
+    synth.volume.value = this.props.volume;
     // this.state.synth.frequency.high = 0;
     if(keyboard == 'trigger') {
       synth.triggerAttack(note, speed)
