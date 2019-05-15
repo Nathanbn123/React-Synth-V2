@@ -60,14 +60,13 @@ _Authors_ **Nate Wessels, Nathan Nielson, Nayomi Morita, Nelia Terrazas**
 
 
 
-
 ### Development Plan
-1. ~~Solidify MVP~~
-2. ~~Set up Github repository~~ _Done_
-3. ~~Build component tree~~
-1. ~~Research technologies we don’t already know~~
-1. ~~Collect content~~
-1. ~~Design app layout~~
+1. Solidify MVP _Done_
+2. Set up Github repository _Done_
+3. Build component tree
+1. Research technologies we don’t already know
+1. Collect content
+1. Design app layout
 1. Build components
 
 
