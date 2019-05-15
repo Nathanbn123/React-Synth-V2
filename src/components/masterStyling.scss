@@ -88,7 +88,9 @@
 }
 .background-board {
   position: absolute;
-
+  top: 1118px;
+  justify-content: center;
+  margin-left:  73px;
 
 }
 .grid-container {
@@ -99,13 +101,7 @@
   position: relative;
   width: 280px;
 }
-.one {
-  margin: none;
 
-}
-.k1push {
-  display: none;
-}
 .one:hover .k1push {
   display: block;
 }
@@ -411,9 +407,6 @@
   margin: none;
 
 }
-.k1push {
-  display: none;
-}
 .oneC:hover .k1push {
   display: block;
 }
@@ -559,8 +552,8 @@
 .sevenC:hover .k7 {
   display: none;
 }
-.finalKey {
-  margin: none;
+.finalkey{
+  border: 1px solid red;
 }
 .finalpush {
   display: none;

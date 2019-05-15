@@ -41,19 +41,16 @@ class Keyboard extends React.Component {
               <img style={{zIndex: -100}} src={table}/>
             </div>
 
-
+            <div className="background-board">
+              <img className="boardControl" src={boardControl}/>
+            </div>
             <div className="row">
-
               <div className="sideKey1">
                 <img  src={sideKey}/>
               </div>
 
-
               <div className="grid-container">
-                <div className="background-board">
-                  <img className="boardControl" style={{zIndex: -1}} src={boardControl}/>
 
-                </div>
                 {this.props.imgSrc.map((instance, i) => (
                   <div key={i} style={{zIndex: 100}} className={this.props.keyClassNames[i]}>
                     <img className={this.props.imgClassNames[i][0]} src={require(`../synth art/${instance}.svg`)} alt="" />
