@@ -11,6 +11,7 @@ class Board extends React.Component {
     super(props);
     this.playSound = this.playSound.bind(this);
     this.setEventKey = this.setEventKey.bind(this);
+    this.pressed = this.pressed.bind(this);
 
   }
 
@@ -31,30 +32,52 @@ class Board extends React.Component {
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
     // this.state.synth.frequency.high = 0;
-    console.log(synth);
     synth.triggerAttackRelease(note, speed);
-
 
   }
 
   setEventKey(key) {
-    console.log(key)
-    console.log(this.props.hotKeys)
     const length = this.props.hotKeys.length;
     for(let i = 0; i < length; i++) {
       if(this.props.hotKeys[i][0] == key) {
-        console.log('is working')
-        console.log(this.props.hotKeys[i][1])
-        console.log(this.props.defaultKeys.speed)
-        this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
+        // this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
       }
     }
   }
 
-
+  pressed(info) {
+    console.log(info.type)
+    let newArray = this.props.activeKeys;
+    let isActive = false;
+    for(let a = 0; a < this.props.activeKeys.length; a++) {
+      if(this.props.activeKeys[a] == info.key) {
+        isActive = true;
+      }
+    }
+    if(info) {
+      if(info.type == 'keydown' && isActive == false) {
+        newArray.push(info.key);
+      } else if(info.type == 'keyup') {
+        let currentArray = [];
+        for(let i = 0; i < this.props.activeKeys.length; i++) {
+          let char = this.props.activeKeys[i];
+          if(char == info.key) {
+            newArray = newArray.slice(i);
+          } else {
+            currentArray.push(char);
+          }
+        }
+        this.props.updateActive(currentArray);
+      }
+    }
+    this.forceUpdate()
+  }
 
 
   render() {
+    console.log(this.props.activeKeys);
+    document.addEventListener('keydown', this.pressed);
+    document.addEventListener('keyup', this.pressed);
     return (
       <div>
         <KeyboardEventHandler handleKeys={['all']} onKeyEvent={(key) => this.setEventKey(key)} />

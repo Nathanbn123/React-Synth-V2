@@ -26,6 +26,7 @@ class App extends React.Component {
       },
       hotKeys: {
         currentHotKeys: [],
+        activeKeys:[],
     },
       oscillator: {
         type: 'triangle',
@@ -49,6 +50,7 @@ class App extends React.Component {
     }
     this.handleKnobChange = this.handleKnobChange.bind(this);
     this.createNewHotKeys = this.createNewHotKeys.bind(this);
+    this.updateKeys = this.updateKeys.bind(this);
     this.createNewHotKeys(exKeys.keyAssignments)
   }
 
@@ -139,6 +141,11 @@ class App extends React.Component {
     this.forceUpdate()
   }
 
+  updateKeys(array) {
+    this.state.hotKeys.activeKeys = array;
+    this.forceUpdate();
+  }
+
   handleChange(newValue) {
     this.setState({
       value: newValue
@@ -146,11 +153,10 @@ class App extends React.Component {
   };
 
   render() {
-    console.log(this.state.hotKeys.currentHotKeys)
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys}/>} />
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys} activeKeys={this.state.hotKeys.activeKeys} updateActive={this.updateKeys}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
