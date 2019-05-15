@@ -9,10 +9,6 @@ class Board extends React.Component {
 
   constructor(props) {
     super(props);
-    const synth = new Tone.Synth().toMaster();
-    this.state = {
-      synth: synth,
-    }
     this.playSound = this.playSound.bind(this);
     this.setEventKey = this.setEventKey.bind(this);
 
@@ -20,19 +16,39 @@ class Board extends React.Component {
 
 
   playSound(note, speed) {
-    this.state.synth.envelope.attack = this.props.envelope.attack;
-    this.state.synth.envelope.decay = this.props.envelope.decay;
-    this.state.synth.envelope.sustain = this.props.envelope.sustain;
-    this.state.synth.envelope.release = this.props.envelope.release;
-    this.state.synth.oscillator.type = this.props.oscillator.type;
-    console.log(this.state.synth);
-    this.state.synth.triggerAttackRelease(note, speed);
+    const eq = new Tone.EQ3({
+      low: this.props.frequency.low,
+      mid: this.props.frequency.mid,
+      high: this.props.frequency.high,
+      lowFrequency: this.props.frequency.lowFrequency,
+      highFrequency: this.props.frequency.highFrequency,
+
+    }).toMaster();
+    const synth = new Tone.Synth().connect(eq);
+    synth.envelope.attack = this.props.envelope.attack;
+    synth.envelope.decay = this.props.envelope.decay;
+    synth.envelope.sustain = this.props.envelope.sustain;
+    synth.envelope.release = this.props.envelope.release;
+    synth.oscillator.type = this.props.oscillator.type;
+    // this.state.synth.frequency.high = 0;
+    console.log(synth);
+    synth.triggerAttackRelease(note, speed);
 
 
   }
 
   setEventKey(key) {
     console.log(key)
+    console.log(this.props.hotKeys)
+    const length = this.props.hotKeys.length;
+    for(let i = 0; i < length; i++) {
+      if(this.props.hotKeys[i][0] == key) {
+        console.log('is working')
+        console.log(this.props.hotKeys[i][1])
+        console.log(this.props.defaultKeys.speed)
+        this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
+      }
+    }
   }
 
 

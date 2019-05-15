@@ -56,6 +56,28 @@
   bottom: 76px;
   right: 592px;
 }
+.knobLow {
+  position: relative;
+  bottom: 254px;
+  right: 830px;
+  z-index: 100;
+}
+.knobHigh {
+  position: relative;
+  bottom: 254px;
+  right: 930px;
+  z-index: 100;
+}
+.knoblowFrequency {
+  position: relative;
+  bottom: 357px;
+  right: 937px;
+}
+.knobHighFrequency {
+  position: relative;
+  bottom: 357px;
+  right: 964px;
+}
 .row {
   position: relative;
   display: flex;
