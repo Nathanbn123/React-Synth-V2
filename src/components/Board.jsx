@@ -9,7 +9,6 @@ class Board extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.playSound = this.playSound.bind(this);
     this.setEventKey = this.setEventKey.bind(this);
 
@@ -40,6 +39,16 @@ class Board extends React.Component {
 
   setEventKey(key) {
     console.log(key)
+    console.log(this.props.hotKeys)
+    const length = this.props.hotKeys.length;
+    for(let i = 0; i < length; i++) {
+      if(this.props.hotKeys[i][0] == key) {
+        console.log('is working')
+        console.log(this.props.hotKeys[i][1])
+        console.log(this.props.defaultKeys.speed)
+        this.playSound(this.props.hotKeys[i][1], this.props.defaultKeys.speed)
+      }
+    }
   }
 
 
