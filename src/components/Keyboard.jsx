@@ -14,7 +14,7 @@ import {HotKeys} from 'react-hotkeys';
 import Knob from './Knob/Knob';
 import './masterStyling.scss';
 import finalKeyPush from '../synth art/finalkeypush.svg';
-import boardControl from '../synth art/boardcontrolnew.svg';
+import boardControl from '../synth art/bestestboardcontrol.svg';
 import table from '../synth art/table.svg';
 
 
