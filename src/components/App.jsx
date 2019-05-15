@@ -35,7 +35,14 @@ class App extends React.Component {
         decay: 4.0,
         sustain: 0.3,
         release: 1,
-        }
+      },
+      frequency: {
+        high: 0,
+        mid: 0,
+        low: 0,
+        highFrequency: 4000,
+        lowFrequency: 450,
+      }
     };
     const exKeys= {
       keyAssignments: ['a', '`', 'z', '1', 's', 'x', '2', 'd', '3', 'c', '4', 'f','v', '5', 'g', '6', 'b', 'h', '7', 'n', '8', 'j', '9', 'm', '0', 'k', ',', '-', 'l', '=', '.', 'backspace', '.', '\\', ';', '/', "'"]
@@ -103,13 +110,36 @@ class App extends React.Component {
       } else if(newDegree > 195 && newDegree <= 260) {
         this.state.oscillator.type = 'pulse';
       }
-
+    }
+    if(name == "low") {
+      let newLow = ((newDegree) / 3.714 - 35);
+      newLow = parseFloat(newLow.toFixed(1));
+      this.state.frequency.low = newLow;
+    }
+    if(name == "mid") {
+      let newMid = ((newDegree) / 3.714 - 35);
+      newMid = parseFloat(newMid.toFixed(1));
+      this.state.frequency.mid = newMid;
+    }
+    if(name == "high") {
+      let newHigh = ((newDegree) / 3.714 - 35);
+      newHigh = parseFloat(newHigh.toFixed(1));
+      this.state.frequency.high = newHigh;
+    }
+    if(name == "highFrequency") {
+      let newHighFrequency = ((newDegree * newDegree) / 4.8);
+      newHighFrequency = parseFloat(newHighFrequency.toFixed(1));
+      this.state.frequency.highFrequency = newHighFrequency;
+    }
+    if(name == "lowFrequency") {
+      let newLowFrequency = ((newDegree * newDegree) / 4.8);
+      newLowFrequency = parseFloat(newLowFrequency.toFixed(1));
+      this.state.frequency.lowFrequency = newLowFrequency;
     }
     this.forceUpdate()
   }
 
   handleChange(newValue) {
-    console.log(newValue)
     this.setState({
       value: newValue
     });
@@ -120,7 +150,8 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} hotKeys={this.state.hotKeys.currentHotKeys}/>} />
+<<<<<<< HEAD
+          <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 

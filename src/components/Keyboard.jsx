@@ -165,6 +165,62 @@ class Keyboard extends React.Component {
                 knobName={"release"}
                 />
             </div>
+            <div className="knobLow">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"low"}
+                />
+            </div>
+            <div className="knobHigh">
+              <Knob
+                size={30}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"high"}
+                />
+            </div>
+            <div className="knobHighFrequency">
+              <Knob
+                size={40}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"highFrequency"}
+                />
+            </div>
+            <div className="knoblowFrequency">
+              <Knob
+                size={40}
+                numTicks={15}
+                degrees={260}
+                min={1}
+                max={100}
+                value={30}
+                color={true}
+                onChange={() =>{this.handleChange}}
+                updateKnob={this.props.updateKnob}
+                knobName={"lowFrequency"}
+                />
+            </div>
             <div>
               <Knob
                 numTicks={125}
@@ -177,17 +233,9 @@ class Keyboard extends React.Component {
                 />
             </div>
           </div>
-
-
-
         </div>
       </div>
-
-
   );
-
   }
-
 }
-
 export default Keyboard;
