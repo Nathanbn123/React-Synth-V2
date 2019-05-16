@@ -17,6 +17,14 @@ class Board extends React.Component {
 
 
   playSound(note, speed, keyboard) {
+    const verb = new Tone.PingPongDelay({
+delayTime  : 7 ,
+maxDelayTime  : .6
+}
+).toMaster();
+
+
+
     const eq = new Tone.EQ3({
       low: this.props.frequency.low,
       mid: this.props.frequency.mid,
@@ -24,10 +32,10 @@ class Board extends React.Component {
       lowFrequency: this.props.frequency.lowFrequency,
       highFrequency: this.props.frequency.highFrequency,
 
-    }).toMaster();
+    }).connect(verb);
 
 
-    const synth = new Tone.Synth().connect(eq);
+    const synth = new Tone.Synth().connect(verb);
     console.log(synth)
     synth.envelope.attack = this.props.envelope.attack;
     synth.envelope.decay = this.props.envelope.decay;
