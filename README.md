@@ -11,7 +11,7 @@ Creating a polyphonic synthesizer using Tone.js and built in React. With this sy
 
 ## Screenshot
 
-![](/Users/Guest/desktop/React-Synth-V2/src/uiscreenshot.png  )
+![](/src/synthArt/synthuiscreenshot.png  )
 
 ## MVP
 * ~~Produce a tone that corresponds to user input on click~~
