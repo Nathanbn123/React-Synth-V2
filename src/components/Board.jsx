@@ -12,16 +12,14 @@ class Board extends React.Component {
     this.playSound = this.playSound.bind(this);
     this.setEventKey = this.setEventKey.bind(this);
     this.pressed = this.pressed.bind(this);
-
   }
 
 
   playSound(note, speed, keyboard) {
     const verb = new Tone.PingPongDelay({
-delayTime  : 7 ,
-maxDelayTime  : .9
-}
-).toMaster();
+    delayTime: this.props.echo.delayTime ,
+    maxDelayTime: this.props.echo.maxDelayTime
+    }).toMaster();
 
 
 
@@ -96,6 +94,7 @@ maxDelayTime  : .9
 
 
   render() {
+    console.log(this.props.echo.delayTime, this.props.echo.maxDelayTime)
     console.log(this.props.activeKeys);
     document.addEventListener('keydown', this.pressed);
     document.addEventListener('keyup', this.pressed);

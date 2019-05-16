@@ -44,6 +44,10 @@ class App extends React.Component {
         highFrequency: 4000,
         lowFrequency: 450,
       },
+      ping: {
+        delayTime: 0.01,
+        maxDelayTime: 0.01,
+      },
       volume: {
       currentVolume: 0,
     },
@@ -156,6 +160,18 @@ class App extends React.Component {
       console.log(newPort);
       this.state.portamento.currentPort = newPort;
     }
+    if(name == "echo") {
+      let newEcho = (newDegree / 40) + 0.01
+      newEcho = parseFloat(newEcho.toFixed(2));
+      this.state.ping.delayTime = newEcho;
+
+    }
+    if(name == "echo2") {
+      let newEcho2 = (newDegree / 25) + 0.01
+      newEcho2 = parseFloat(newEcho2.toFixed(2));
+      console.log(newEcho2)
+      this.state.ping.maxDelayTime = newEcho2;
+    }
     this.forceUpdate()
   }
 
@@ -175,7 +191,7 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route path='/' render={() => <Board defaultKeys={this.state.defaultKeys} keyClassNames={this.state.board.classNames} imgSrc={this.state.board.imgSrc} imgClassNames={this.state.board.imgClassNames} envelope={this.state.envelope} oscillator={this.state.oscillator} updateKnob={this.handleKnobChange} frequency={this.state.frequency} hotKeys={this.state.hotKeys.currentHotKeys} activeKeys={this.state.hotKeys.activeKeys} updateActive={this.updateKeys} portamento={this.state.portamento}
-          volume={this.state.volume.currentVolume}/>} />
+          volume={this.state.volume.currentVolume} echo={this.state.ping}/>} />
           <Route path='/Error' component={Error404} />
         </Switch>
 
@@ -187,69 +203,3 @@ class App extends React.Component {
 
 
 export default App;
-
-
-
-// <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}} >
-//
-//   <Knob
-//     size={100}
-//     numTicks={25}
-//     degrees={260}
-//     min={1}
-//     max={100}
-//     value={30}
-//     color={true}
-//     onChange={() =>{this.handleChange}}
-//     updateKnob={this.handleKnobChange}
-//     knobName={"attack"}
-//     />
-//   <Knob
-//     size={100}
-//     numTicks={25}
-//     degrees={260}
-//     min={1}
-//     max={100}
-//     value={30}
-//     color={true}
-//     onChange={() =>{this.handleChange}}
-//     updateKnob={this.handleKnobChange}
-//     knobName={"decay"}
-//     />
-//   <Knob
-//     size={100}
-//     numTicks={25}
-//     degrees={260}
-//     min={1}
-//     max={100}
-//     value={30}
-//     color={true}
-//     onChange={() =>{this.handleChange}}
-//     updateKnob={this.handleKnobChange}
-//     knobName={"sustain"}
-//     />
-//   <Knob
-//     size={100}
-//     numTicks={25}
-//     degrees={260}
-//     min={1}
-//     max={100}
-//     value={30}
-//     color={true}
-//     onChange={() =>{this.handleChange}}
-//     updateKnob={this.handleKnobChange}
-//     knobName={"release"}
-//     />
-//   <Knob
-//     size={100}
-//     numTicks={25}
-//     degrees={260}
-//     min={1}
-//     max={100}
-//     value={30}
-//     color={true}
-//     onChange={() =>{this.handleChange}}
-//     updateKnob={this.handleKnobChange}
-//     knobName={"oscillator"}
-//     />
-// </div>
