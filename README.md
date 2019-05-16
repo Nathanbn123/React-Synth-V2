@@ -11,7 +11,7 @@ Creating a polyphonic synthesizer using Tone.js and built in React. With this sy
 
 ## Screenshot
 
-![](/Users/Guest/desktop/React-Synth-V2/src/uiscreenshot.png  )
+![](/src/uiscreenshot.png  )
 
 ## MVP
 * ~~Produce a tone that corresponds to user input on click~~
@@ -40,8 +40,8 @@ Creating a polyphonic synthesizer using Tone.js and built in React. With this sy
 
 ### Installation
 * Clone [this repository](https://github.com/Nathanbn123/React-Synth-V2) onto your desktop.
-* Run npm i to build.
-* Run npm start to view in your local browser.
+* Run npm i to install dependencies.
+* Run npm start to build and view in your local browser.
 
 ### Known Bugs
 * None identified
