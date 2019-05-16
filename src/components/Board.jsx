@@ -17,6 +17,14 @@ class Board extends React.Component {
 
 
   playSound(note, speed, keyboard) {
+    const verb = new Tone.PingPongDelay({
+delayTime  : 7 ,
+maxDelayTime  : .9
+}
+).toMaster();
+
+
+
     const eq = new Tone.EQ3({
       low: this.props.frequency.low,
       mid: this.props.frequency.mid,
@@ -24,13 +32,17 @@ class Board extends React.Component {
       lowFrequency: this.props.frequency.lowFrequency,
       highFrequency: this.props.frequency.highFrequency,
 
-    }).toMaster();
-    const synth = new Tone.Synth().connect(eq);
+    }).connect(verb);
+
+
+    const synth = new Tone.Synth().connect(verb);
+    console.log(synth)
     synth.envelope.attack = this.props.envelope.attack;
     synth.envelope.decay = this.props.envelope.decay;
     synth.envelope.sustain = this.props.envelope.sustain;
     synth.envelope.release = this.props.envelope.release;
     synth.oscillator.type = this.props.oscillator.type;
+    // synth.portamento = this.props.portamento.currentPort;
     synth.volume.value = this.props.volume;
     // this.state.synth.frequency.high = 0;
     if(keyboard == 'trigger') {
@@ -55,6 +67,7 @@ class Board extends React.Component {
 
   pressed(info) {
     console.log(info.type)
+
     let newArray = this.props.activeKeys;
     let isActive = false;
     for(let a = 0; a < this.props.activeKeys.length; a++) {
