@@ -76,7 +76,7 @@ class Keyboard extends React.Component {
 
               <div  className='finalKey' >
                 <img className="final" src={finalKey}/>
-                <img className="finalpush" src={finalKeyPush} onClick={() => {this.props.playSound(this.props.defaultKeys.lastNote, this.props.defaultKeys.speed)}}/>
+                <img className="finalpush" src={finalKeyPush} onClick={() => {this.props.playSound(this.props.defaultKeys.lastNote[0], this.props.defaultKeys.speed)}}/>
 
               </div>
 
@@ -246,7 +246,35 @@ class Keyboard extends React.Component {
                   updateKnob={this.props.updateKnob}
                   knobName={"portamento"}
                   />
-      </div>
+              </div>
+              <div className="knobEcho">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"echo"}
+                  />
+              </div>
+              <div className="knobEcho2">
+                <Knob
+                  size={30}
+                  numTicks={15}
+                  degrees={260}
+                  min={1}
+                  max={100}
+                  value={30}
+                  color={true}
+                  onChange={() =>{this.handleChange}}
+                  updateKnob={this.props.updateKnob}
+                  knobName={"echo2"}
+                  />
+              </div>
 
 
           </div>
