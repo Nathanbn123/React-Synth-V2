@@ -33,7 +33,7 @@ class Board extends React.Component {
     }).connect(verb);
 
 
-    const synth = new Tone.Synth().connect(verb);
+    const synth = new Tone.Synth().connect(eq);
     console.log(synth)
     synth.envelope.attack = this.props.envelope.attack;
     synth.envelope.decay = this.props.envelope.decay;
