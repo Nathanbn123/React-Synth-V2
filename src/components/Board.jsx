@@ -19,7 +19,7 @@ class Board extends React.Component {
   playSound(note, speed, keyboard) {
     const verb = new Tone.PingPongDelay({
 delayTime  : 7 ,
-maxDelayTime  : .6
+maxDelayTime  : .9
 }
 ).toMaster();
 
