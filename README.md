@@ -7,7 +7,7 @@ _Authors_ **Nate Wessels, Nathan Nielson, Nayomi Morita, Nelia Terrazas**
 
 
 ### Description
-Creating a polyphonic synthesizer using Tone.js and built in React. With this synthesizer, you are able to both click on a key, as well as use your keyboard to create a beat.
+Creating a polyphonic synthesizer using Tone.js and built in React. With this synthesizer, you are able to both click on a key, as well as use your keyboard to produce a tone.
 
 ## Screenshot
 
