@@ -1,8 +1,12 @@
 {
-  "name": "react-template",
+  "name": "React-Synth-V2",
   "version": "1.0.0",
   "description": "This will act as template",
   "main": "index.jsx",
+  "engines": {
+   "npm": "5.7.1",
+   "node": "9.5.0"
+ },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
@@ -11,21 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lilkgb/react-template"
+    "url": "git+https://github.com//Nathanbn123/React-Synth-V2"
   },
   "keywords": [
     "react",
     "template"
   ],
-  "author": "Ryan",
+  "author": "Nathan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lilkgb/react-template"
+    "url": "https://github.com/Nathanbn123/React-Synth-V2"
   },
-  "homepage": "https://github.com/Lilkgb/react-template",
+  "homepage": "https://github.com/Nathanbn123/React-Synth-V2",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "css-loader": "^2.1.1",
+    "express": "^4.17.1",
     "moment": "^2.18.1",
     "mousetrap": "^1.6.3",
     "prop-types": "^15.5.10",
