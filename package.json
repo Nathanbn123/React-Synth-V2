@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "This will act as template",
   "main": "index.jsx",
+  "engines": {
+   "npm": "5.7.1",
+   "node": "9.5.0"
+ },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
