@@ -7,13 +7,11 @@ _Authors_ **Nate Wessels, Nathan Nielson, Nayomi Morita, Nelia Terrazas**
 
 ### Deployed at https://synth-test-46de3.firebaseapp.com/#/
 
+![](/src/screenshots/screenShot.png)
+
 ### Description
 
 Creating a polyphonic synthesizer using Tone.js and built in React. With this synthesizer, you are able to both click on a key, as well as use your 1-0 and A-L keys to produce a note.
-
-## Screenshot
-
-![](/src/screenshots/screenShot.png)
 
 ## MVP
 
