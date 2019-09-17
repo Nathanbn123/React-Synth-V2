@@ -30,15 +30,7 @@ Creating a polyphonic synthesizer using Tone.js and built in React. With this sy
 5. Design app layout _Done_
 6. Build components _Done_
 
-### Product Requirements
 
-- The user should be able to indicate and submit satisfaction level for each category
-- The system should include questions in each category to help people assess their satisfaction level for that category
-- The system will require the user to provide a satisfaction level for each category in order to save the user’s data
-- The system will allow the user to make changes in each category before final submission
-- The user can create a new assessment
-- The user can retrieve and compare all previous graphs
-- The user will not be able to make changes to saved data
 
 ### Installation
 
